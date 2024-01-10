@@ -1,0 +1,15 @@
+:local(.scoped) {
+  @apply bg-card_bg_color_01 h-full;
+
+  .password-box {
+    @apply pt-8 pl-6 bg-card_bg_color_03 pr-6 h-44;
+  }
+
+  .commit-btn {
+    @apply w-12 h-12 bg-brand_color rounded-full flex justify-center items-center m-auto mt-8;
+
+    .commit-icon {
+      @apply text-2xl text-card_bg_color_03
+    }
+  }  
+}

@@ -1,0 +1,34 @@
+:local(.search-message-box) {
+  @apply bg-bg_color h-full grid;
+
+  grid-template-rows: auto minmax(0, 1fr);
+
+  
+
+  --border-radius-small: 8px;
+
+  .search-input {
+    @apply px-4 py-[7px] ;
+
+    .arco-input-group {
+      @apply bg-box_bg_color rounded-lg;
+    }
+
+    .arco-input {
+      @apply py-[7px] bg-box_bg_color rounded-lg;
+    }
+
+    
+    
+  }
+
+  .content {
+    @apply grid bg-bg_color;
+
+    grid-template-rows: auto minmax(0, 1fr) ;
+  }
+
+  .list-box {
+    overflow: auto;
+  }
+}

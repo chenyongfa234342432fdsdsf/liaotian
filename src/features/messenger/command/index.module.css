@@ -1,0 +1,35 @@
+:local(.command) {
+  @apply h-full;
+
+  border-color: var(--line_color_02);
+  border-style: solid;
+  border-right-width: 1px;
+
+  .area-box {
+    @apply justify-center my-8 px-6;
+
+    .arco-form-item-wrapper {
+      @apply flex-1;
+    }
+
+    .area-handle {
+      @apply bg-box_bg_color pt-4 pl-4;
+
+      border: 0;
+      border-radius: 10px;
+      resize: none;
+
+      &::placeholder {
+        @apply text-text_color_04 text-[16px] font-medium leading-normal ; 
+      }
+
+    }
+  }
+
+  .button-box {
+    @apply justify-center items-center h-[50px] bg-brand_color w-full text-button_text_01 font-medium;
+
+    font-size: 16px;
+    border-radius: 10px;
+  }
+}

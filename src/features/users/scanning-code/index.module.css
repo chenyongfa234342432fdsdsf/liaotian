@@ -1,0 +1,30 @@
+:local(.login-scanning-code) {
+  .qcode-box {
+    @apply mt-56 w-48 flex flex-col items-center mr-48;
+
+    .qcrode {
+      padding: 10px;
+      box-shadow: 0 2px 4px var(--card_bg_color_02);
+      @apply w-40 h-40 rounded-lg relative border-line_color_01 bg-card_bg_color_03;
+
+      .mask {
+        @apply absolute inset-0 bg-bg_color opacity-95;
+      }
+
+      .refresh {
+        @apply absolute inset-0 flex justify-center items-center;
+
+        button {
+          font-size: 14px;
+          line-height: 14px;
+          @apply font-normal;
+        }
+
+        .arco-btn-primary.arco-btn-disabled {
+          padding: 0 6px;
+        }
+      }
+
+    }
+  }
+}

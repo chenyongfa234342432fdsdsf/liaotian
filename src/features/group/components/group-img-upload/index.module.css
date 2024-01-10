@@ -1,0 +1,23 @@
+:local(.img-box) {
+  @apply bg-card_bg_color_03 text-button_text_01  w-[200px] h-[200px] rounded-full flex items-center justify-center relative;
+
+  margin: 32px auto 26px;
+  background: linear-gradient(180deg, #B4B6BE 0%, #999BA1 100%);
+
+  .user-icon svg {
+    @apply w-[100px] h-[100px];
+  }
+
+  .camera-icon {
+    @apply text-card_bg_color_01 bg-text_color_01 rounded-full w-[40px] h-[40px] flex items-center justify-center border-card_bg_color_01 absolute bottom-0 right-0;
+
+    border-width: 2px;
+
+    svg {
+      @apply text-[18px];
+
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

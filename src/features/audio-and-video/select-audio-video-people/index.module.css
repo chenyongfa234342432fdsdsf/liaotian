@@ -1,0 +1,92 @@
+:local(.select-root-wrapper) {
+  @apply flex flex-col bg-card_bg_color_03 rounded;
+
+  height: 612px;
+  max-height: 80vh;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 15%);
+
+  .header {
+    @apply flex items-center px-6 py-4 bg-brand_color text-xl text-button_text_01 font-medium rounded-t;
+
+    .icon {
+      @apply mr-6;
+    }
+  }
+
+  .category-item {
+    @apply flex justify-between items-center pl-6 cursor-pointer;
+
+    .left {
+      @apply mr-3 py-2 w-10 h-10 rounded-full bg-brand_color flex items-center justify-center text-xl text-button_text_01;
+
+    }
+
+    .right {
+      @apply py-2 pr-6 flex-1 flex justify-between items-center text-base leading-10;
+    }
+
+    &.with-border {
+      .right {
+        @apply border-b border-solid border-line_color_02;
+      }
+    }
+  }
+
+  .actions-wrapper {
+    @apply flex items-center justify-between px-6 py-2 border-solid border-t border-line_color_02;
+
+    .names {
+      @apply whitespace-nowrap overflow-hidden overflow-ellipsis flex-1 w-0 mr-4 text-base;
+    }
+
+    .button {
+      @apply rounded-full bg-brand_color flex items-center justify-center;
+
+      width: 46px;
+      height: 46px;
+    }
+  }
+
+  .with-search {
+    --border-radius-small: 8px;
+  
+    .arco-input {
+      @apply py-[7px];
+
+    }
+  }
+}
+
+:local(.select-modal-wrapper) {
+  .arco-modal {
+    width: 436px;
+
+    @apply rounded
+  }
+
+  .arco-modal-content {
+    @apply p-0 rounded;
+  }
+}
+
+:local(.conversation-wrapper) {
+  @apply flex pl-4 cursor-pointer items-center;
+
+  .conversation-left {
+    @apply mr-4 relative;
+
+  }
+
+  .conversation-right {
+    @apply w-0 py-5 pr-4 flex-1 border-b border-solid border-line_color_02;
+
+    .conversation-name {
+      @apply text-base overflow-hidden text-ellipsis max-w-full whitespace-nowrap mr-4;
+    }
+  }
+
+  &:hover {
+    @apply bg-box_bg_color;
+  }
+
+}

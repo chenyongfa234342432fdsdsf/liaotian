@@ -1,0 +1,6 @@
+:local(.system-content) {
+  @apply w-full flex-1 bg-box_bg_color overflow-y-auto;
+
+  height: 100%;
+  padding: 12px 56px;
+}

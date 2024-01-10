@@ -1,0 +1,60 @@
+:local(.emoji) {
+  width: 498px;
+  height: 50%;
+  max-height: 421px;
+  @apply bg-card_bg_color_03;
+
+  border-radius: 20px;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%);
+
+
+  .title-icon {
+    @apply text-icon_color;
+
+    svg {
+      @apply w-5 h-5;
+    }
+  }
+
+  .active {
+    @apply !text-brand_color;
+  }
+
+  .arco-tabs-header-title {
+    @apply m-0 px-[10px] mr-5;
+  }
+
+  .arco-tabs-content {
+    @apply pt-0;
+  }
+
+  .arco-tabs-header-ink {
+    @apply bg-brand_color h-1;
+  }
+
+  .emoji-group {
+    @apply h-[365px] overflow-y-auto;
+
+    padding: 18px;
+
+    .emoji-box {
+
+      @apply flex flex-wrap justify-between;
+
+      gap: 18px;
+        
+      img {
+        @apply w-10 h-10;
+      }
+    }
+        
+    .title {
+      @apply pb-2 text-xs text-text_color_02;
+    }
+  }
+
+  .arco-tabs-header-title:hover {
+    @apply bg-card_bg_color_03;
+  }
+
+}

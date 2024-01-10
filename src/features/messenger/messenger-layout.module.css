@@ -1,0 +1,72 @@
+:local(.messenger-layout-wrapper) {
+  @apply flex flex-1 py-6 px-40 relative h-0;
+
+  .layout-contetn-wrapper {
+    @apply flex flex-1 relative;
+
+    box-shadow: 0 6px 12px 0 rgb(0 0 0/6%);
+
+    .sign-box {
+      right: -25px;
+      bottom: 121px;
+      width: 50px;
+      height: 50px;
+      box-shadow: 0 4px 10px 0 rgb(0 0 0 / 15%);
+      @apply rounded-full bg-button_text_01 flex justify-center items-center absolute z-1
+    }
+  }
+
+
+  .messenger-bg {
+    @apply absolute w-full h-full top-0 left-0 z-0;
+
+    .brand-bar {
+      height: 136px;
+    }
+  }
+
+  .messenger-left {
+    @apply bg-bg_color z-1 h-full;
+
+    width: 480px;
+  }
+
+  .messenger-center {
+    @apply w-0 flex-1 bg-bg_color z-1 h-full;
+  }
+
+  .messenger-right {
+    @apply relative bg-bg_color overflow-x-hidden h-full;
+
+    width: 480px;
+
+    /* transition: all 0.3s ease-in-out; */
+  }
+
+  /** 布局 header 高度 */
+  --layout-header-height: 60px;
+
+  @media (max-width: 1600px) {
+    @apply px-20;
+
+    .messenger-left {
+      width: 400px;
+    }
+
+    .messenger-right {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    @apply px-20;
+
+    .messenger-left {
+      width: 320px;
+    }
+
+    .messenger-right {
+      width: 320px;
+    }
+  }
+}

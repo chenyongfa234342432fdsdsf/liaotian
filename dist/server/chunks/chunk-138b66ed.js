@@ -1,0 +1,1 @@
+import"./chunk-20abda34.js";import{useState as n,useEffect as l}from"react";import"./chunk-ea028b12.js";function f({children:s,hasLoading:e=!1}){const[r,t]=n(!1);return l(()=>{t(!0)},[]),null}export{f as A};

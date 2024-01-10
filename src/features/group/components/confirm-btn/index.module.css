@@ -1,0 +1,11 @@
+:local(.confirm-btn) {
+  @apply text-2xl rounded-full bg-brand_color w-[46px] h-[46px] flex justify-center items-center;
+    
+  margin: auto;
+  margin-top: 32px;
+  color: #ffffff;
+
+  .arco-spin-children {
+    @apply w-[46px] h-[46px]  rounded-full bg-brand_color overflow-hidden flex justify-center items-center;
+  }
+}

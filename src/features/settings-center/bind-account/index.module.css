@@ -1,0 +1,12 @@
+:local(.scoped) {
+  @apply flex flex-col h-full bg-card_bg_color_01;
+  
+  .add-icon,
+  .delete-icon {
+    color: #ffffff;
+  }
+
+  .edit-icon {
+    color: #9B9CA2;
+  }
+}

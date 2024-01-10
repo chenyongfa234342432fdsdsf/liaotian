@@ -1,0 +1,48 @@
+
+:local(.popbox) {
+  width: 500px;
+  height: 188px;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 15%);
+  @apply p-6;
+  .arco-modal {height: auto;}
+
+  .arco-modal-header {
+    height: auto;
+    padding: 0;
+    padding-bottom: 24px;
+  }
+
+  .arco-modal-content {
+    padding: 0;
+  }
+  
+  .arco-modal-footer {
+    padding-bottom: 0;
+    @apply justify-end;
+
+    border-top: none;
+      
+    .arco-btn {
+      flex: none !important;
+      width: auto;
+      height: 38px;
+      @apply rounded-full bg-brand_color;
+    }
+  
+    .arco-btn-secondary {
+      display: none;
+    }
+        
+  }
+  
+  .chat-list {
+    .list-box {
+      max-height: 290px;
+  
+      .rounded-img {
+        border-radius: 999px;
+      }
+       
+    }
+  }
+}

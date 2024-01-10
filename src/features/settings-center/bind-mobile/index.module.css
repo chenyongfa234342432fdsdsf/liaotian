@@ -1,0 +1,59 @@
+:local(.scoped) {
+  border-right: 1px solid #CDCDCF;
+  @apply bg-card_bg_color_01 h-full w-full border-line_color_02;
+
+  .mobile-content {
+    max-height: calc(100% - 112px);
+    overflow: auto;
+  }
+
+  .mobile-box {
+    padding: 24px 24px 0;
+    @apply w-full h-auto bg-card_bg_color_03;
+
+    .list-item {
+      height: 72px;
+      @apply flex items-center justify-between border-b border-solid border-line_color_02;
+
+      .area {
+        @apply text-brand_color text-base font-medium
+      }
+
+      .area-code {
+        @apply text-text_color_01 text-base w-auto mr-3;
+      }
+
+      .mobile { 
+        @apply flex-1 h-auto bg-card_bg_color_03 font-medium;
+
+        &::placeholder {
+          @apply text-base font-medium text-text_color_04
+        }
+      }
+
+      .code {
+        @apply flex-1 h-auto bg-card_bg_color_03 font-medium;
+
+        &::placeholder {
+          @apply text-base font-medium text-text_color_04
+        }
+      }
+
+      .getcode {
+        @apply text-brand_color text-base;
+      }
+    }
+   
+  }
+
+  .commit-btn {
+    @apply w-12 h-12 bg-brand_color rounded-full flex justify-center items-center m-auto mt-8;
+
+    .commit-icon {
+      @apply text-2xl text-card_bg_color_03
+    }
+  }  
+
+  
+
+}

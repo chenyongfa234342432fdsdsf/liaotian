@@ -1,0 +1,51 @@
+:local(.scoped) {
+  @apply bg-card_bg_color_01 h-full w-full border-line_color_02 border-r;
+  
+  .content {
+    max-height: calc(100% - 112px);
+    overflow: auto;
+    @apply flex flex-col items-center justify-start bg-card_bg_color_03;
+
+   
+  
+    .black-search {
+      @apply w-full p-4;
+  
+      .arco-input-inner-wrapper-has-prefix> .arco-input {
+        padding-left: 8px
+      }
+
+      .black-search-input {
+        @apply text-text_color_02 rounded-lg bg-box_bg_color;
+    
+        .arco-input-inner-wrapper {
+          border: none
+        }
+      }
+    }
+
+    .list-box {
+      @apply w-full;
+
+      .list-item {
+        @apply flex p-4 cursor-pointer pr-0 pb-0;
+
+        .list-info {
+          height: 60px;
+          @apply border-line_color_02 border-b w-full
+        }
+
+        &:last-child {
+          .list-info {
+            @apply border-b-0
+          }
+          
+        }
+      }
+    }
+
+ 
+  }
+}
+
+

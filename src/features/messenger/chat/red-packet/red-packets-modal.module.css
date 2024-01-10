@@ -1,0 +1,35 @@
+:local(.red-packets-modal) {
+  @apply p-6 text-sm;
+
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 15%);
+
+  .btn[class] {
+    @apply text-sm;
+
+    flex: initial;
+    height: 38px;
+    border-radius: 45px;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .footer {
+    @apply flex justify-end;
+
+    gap: 16px;
+    width: 100%;
+  }
+
+  .red[class] {
+    &:hover {
+      @apply bg-secondary_color !important;
+    }
+    @apply text-button_text_01 bg-secondary_color border-secondary_color !important ;
+
+    
+  }
+}

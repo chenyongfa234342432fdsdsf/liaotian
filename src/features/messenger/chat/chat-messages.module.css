@@ -1,0 +1,24 @@
+/* stylelint-disable color-function-notation */
+/* stylelint-disable length-zero-no-unit */
+/* stylelint-disable alpha-value-notation */
+:local(.chat-messages-wrapper) {
+  @apply px-16 pt-10 pb-4 overflow-y-auto h-full break-all relative;
+
+  .group-time {
+    @apply flex justify-center my-4;
+
+    .tag {
+      @apply bg-card_bg_color_02 flex items-center justify-center rounded-lg text-xs font-medium py-0.5;
+
+      /** 宽度写死 */
+      min-width: 112px;
+      box-shadow: 0px -0.4px 0px 0px #EEEEF4, 0px 0.4px 0px 0px rgb(98 98 98 / 20%);
+    }
+  }
+}
+
+:local(.new-messages-tip) {
+  @apply flex items-center cursor-pointer text-brand_color rounded-full font-medium px-3 py-2 bg-card_bg_color_03 absolute bottom-10 right-16 z-10;
+
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.20);
+}

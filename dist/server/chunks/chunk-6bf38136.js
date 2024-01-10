@@ -1,0 +1,1 @@
+import n from"classnames";import{i as m}from"./chunk-357fcbd2.js";import{r as l}from"./chunk-687b5088.js";import{j as f}from"./chunk-ea028b12.js";function L({href:s,children:o,prefetch:c,className:r,target:t}){const i="",e=l(s)||"";let a=`${i}${e}`;return s||(a=""),m(s)&&(a=s),f("a",{href:a,target:t?"_blank":"_self",className:n("navigation-link",r),children:o})}export{L};

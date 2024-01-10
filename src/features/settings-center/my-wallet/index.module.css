@@ -1,0 +1,27 @@
+:local(.scoped) {
+  @apply flex flex-col h-full;
+  
+  .tabs-wrap .tab {
+    @apply flex-1;
+
+    &.active {
+      @apply text-brand_color;
+
+      .item::after {
+        @apply w-full h-1;
+      }
+    }
+  }
+
+  .arco-list-wrapper {
+    @apply flex-1 pl-6;
+
+    .arco-list {
+      @apply border-none h-full;
+    }
+  }
+
+  .arco-list-content .arco-empty {
+    height: unset;
+  }
+}

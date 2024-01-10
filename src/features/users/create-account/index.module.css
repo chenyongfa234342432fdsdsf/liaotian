@@ -1,0 +1,189 @@
+:local(.scoped) {
+  @apply w-full h-full md:px-0 mx-auto flex justify-center bg-card_bg_color_01 items-start relative;
+
+
+  .qcode-box {
+    @apply mt-56 w-48 flex flex-col items-center mr-48;
+
+    .qcrode {
+      @apply w-40 h-40 rounded-lg;
+    }
+  }
+
+  .arco-form {
+    @apply w-auto
+  }
+
+  .register-box {
+    @apply mt-24 pb-5;
+
+    .unline {
+      border-bottom: 1px solid var(--brand_color);
+    }
+
+    .size32 {
+      font-size: 32px;
+    }
+
+    .tab-box {
+      @apply w-96 h-20;
+
+      ul {
+        @apply flex justify-start items-center w-96 h-20;
+
+        li {
+          @apply text-base text-text_color_02 h-8 relative mr-8 cursor-pointer font-medium;
+        }
+
+        li.active {
+          @apply text-text_color_01;
+
+          &::after {
+            left: 50%;
+            height: 2px;
+            margin-left: -14px;
+            content: '';
+            @apply absolute bottom-0 bg-brand_color w-7 rounded-sm;
+          }
+        }
+       
+      }
+    }
+
+    .list-item {
+      min-height: 48px;
+      @apply flex items-center justify-between border-b border-solid border-line_color_02;
+  
+      .area {
+        @apply text-brand_color text-base bg-card_bg_color_03 font-medium cursor-pointer;
+
+        &::placeholder {
+          @apply text-base font-medium text-text_color_04
+        }
+
+        .arco-input {
+          @apply cursor-pointer
+        }
+      }
+  
+      .area-code {
+        @apply text-text_color_01 text-base w-auto mr-3 font-medium;
+      }
+  
+      .input-box {
+        @apply flex-1 h-auto text-text_color_01 bg-card_bg_color_03 font-medium text-base border-none pl-0;
+
+        &:hover {
+          background-color: transparent;
+        }
+
+        &::placeholder {
+          @apply text-base font-medium text-text_color_04
+        }
+      }
+
+      .password-input {
+        @apply flex-1 h-auto text-text_color_01;
+      }
+
+      .getcode {
+        @apply text-brand_color text-base font-medium;
+      }
+    }
+
+    
+    .arco-form-item {
+      margin-bottom: 0;
+
+      .arco-form-item-wrapper {
+        @apply w-full;
+
+        .arco-form-message {
+          padding-bottom: 4px;
+        }
+
+        .arco-input-inner-wrapper-default {
+          background-color: transparent!important;
+          @apply pl-0 border-none;
+        }
+        
+        .arco-input-group-addbefore {
+          background-color: transparent;
+          @apply border-r-0 pl-0
+        }
+
+        .arco-input-inner-wrapper input {
+          @apply text-base font-medium;
+
+          &::placeholder {
+            @apply text-base font-medium text-text_color_04
+          }
+        }
+
+        .arco-input-group-addafter {
+          background-color: transparent;
+          @apply pr-0 border-l-0;
+
+          .getcode {
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    .register-content {
+      @apply w-96 h-auto rounded-xl bg-card_bg_color_03 pl-4 flex flex-col overflow-hidden;
+    
+     
+
+      .last-item {
+        align-items: flex-start;
+        border: none;
+      }
+       
+    }
+
+    .server-box {
+      border-bottom: 0;
+      @apply bg-card_bg_color_03 rounded-xl pl-4 mt-6 w-96;
+    }
+
+    .commit-btn {
+      height: 46px;
+      border-radius: 10px;
+      @apply bg-brand_color mt-14 w-96;
+
+      &:hover {
+        @apply bg-brand_color
+      }
+    }
+  }
+  
+  
+  .country-icon {
+    @apply mr-2 text-sm text-icon_color
+}
+
+  .country-icon-active {
+    @apply text-brand_color mr-2 text-sm
+}
+  
+  input:-webkit-autofill {
+    -webkit-text-fill-color: var(--text_color_01);
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  input::-webkit-outer-spin-button,  
+  input::-webkit-inner-spin-button {  
+    margin: 0;  
+    appearance: none !important;  
+  }
+
+  /* 火狐 */
+  input[type= "number"] {
+    appearance: textfield;
+  }
+
+}

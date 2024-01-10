@@ -1,0 +1,11 @@
+:local(.upload-media-list) {
+  @apply flex flex-col gap-y-4;
+
+  > div {
+    @apply flex flex-row items-center;
+  }
+
+  > :last-child {
+    @apply mb-auto;
+  }
+}

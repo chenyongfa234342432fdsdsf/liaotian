@@ -1,0 +1,29 @@
+:local(.scoped) {
+  border-right: 1px solid #CDCDCF;
+  @apply bg-card_bg_color_01 h-full w-full border-line_color_02;
+  
+  .set-box {
+    max-height: calc(100% - 112px);
+    overflow: auto;
+
+    .head-box {
+      @apply w-full bg-brand_color_animate text-button_text_01 h-28 pt-16 text-xl;
+    
+      .back-icon {
+        @apply text-button_text_01
+        }
+    }
+
+    .bind {
+      @apply text-text_color_03 text-sm;
+    }
+
+    .arco-switch-checked {
+      background-color: var(--brand_color_animate);
+    }
+
+    .arrow-icon {
+      @apply text-text_color_02
+  }
+  }
+}

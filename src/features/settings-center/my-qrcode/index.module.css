@@ -1,0 +1,44 @@
+:local(.scoped) {
+  height: 100%;
+
+  .qrode-box {
+    max-height: calc(100% - 112px);
+    overflow: auto;
+    @apply w-full bg-card_bg_color_03 pt-8 pb-8 flex flex-col justify-start items-center;
+
+    .user-box {
+      @apply flex flex-col justify-center items-center;
+
+      .headurl {
+        width: 70px;
+        height: 70px;
+        @apply rounded-full;
+      }
+
+      .user-name {
+        @apply text-text_color_01 text-base;
+      }
+
+      .user-nation {
+        @apply text-text_color_02 text-sm;
+      }
+     
+    }
+
+    .qrcode-img {
+      width: 260px;
+      @apply flex flex-col justify-center items-center mt-6;
+
+      .tip {
+        @apply text-sm text-text_color_02 mt-6;
+      }
+
+      .save-qrcode {
+        width: 160px;
+        font-size: 16px;
+        background-color: var(--brand_color);
+        @apply flex justify-center items-center text-button_text_01 mt-8 rounded-lg;
+      }
+    }
+  }
+}

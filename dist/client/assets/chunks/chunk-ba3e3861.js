@@ -1,0 +1,1 @@
+import{n as l,i as c}from"./chunk-634a8a63.js";import{r as i}from"./chunk-09d047a9.js";const v=(r,t)=>{const s="",a=i(r)||"";let e=`${s}${a}`;return r||(e=""),c(r)&&(e=r),t!=null&&t.target?window.open(e,"target"):l(e,{overwriteLastHistoryEntry:!!(t!=null&&t.overwriteLastHistoryEntry),keepScrollPosition:!!(t!=null&&t.keepScrollPosition)})};export{v as l};

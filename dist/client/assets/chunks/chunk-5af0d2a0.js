@@ -1,0 +1,1 @@
+import{R as t}from"./chunk-fde55823.js";const r=e=>t({path:"/v1/im-helpCenter/announcementList",method:"GET",params:e}),s=e=>t({path:"/v1/im-helpCenter/announcement/content",method:"GET",params:e}),o=e=>t({path:"/v1/im/chat/friend/list",method:"GET",params:e}),a=e=>t({path:"/v1/im-helpCenter/horseLamp",method:"GET",params:e});export{r as a,s as b,a as c,o as g};

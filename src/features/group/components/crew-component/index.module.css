@@ -1,0 +1,83 @@
+:local(.crew) {
+  .nav-item {
+    @apply flex justify-between;
+
+    .nav-item-left {
+      @apply flex ;
+
+      .nav-ico-box {
+        @apply w-12 h-12 overflow-hidden;
+
+        background: linear-gradient(180deg, #B4B6BE 0%, #999BA1 100%);
+        border-radius: 50%;
+        
+        &.disabled {
+          .avatar-img {
+            @apply bg-card_bg_color_02;
+          }
+        }
+
+      }
+
+      .nav-text {
+        @apply text-text_color_01 text-base leading-[48px] ml-3;
+      }
+
+      .disabled {
+        @apply text-text_color_04 ;
+
+      }
+    }
+
+    .nav-item-right {
+      @apply mr-4 flex justify-center items-center;
+
+      .add-btn {
+        @apply bg-bg_sr_color text-text_color_01 text-[14px] text-center leading-[28px] ;
+
+        width: 60px;
+        height: 28px;
+        border-radius: 24px;
+      }
+
+      .add-text {
+        @apply text-text_color_02 text-[14px];
+      }
+    }
+  }
+
+  .line {
+    @apply bg-line_color_02 my-3 ml-[60px];
+
+    width: 404px;
+    height: 1px;
+  }
+
+  .highlighted {
+    @apply text-brand_color;
+
+  }
+
+
+   
+  .select-icon {
+    @apply flex items-center text-[24px] mr-4 text-icon_color;
+
+    .selected-icon {
+      @apply text-brand_color;
+
+      &.disabled {
+        @apply text-brand_color_disable;
+      }
+    }
+
+    .not-selected-icon {
+      &.disabled {
+        @apply text-line_color_01;
+      }
+    }
+
+
+
+  }
+}

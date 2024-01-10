@@ -1,0 +1,84 @@
+:local(.chat-complain-model) {
+  .arco-btn {
+    flex: 0 !important;
+    height: 38px !important;
+    @apply rounded-full;
+  }
+
+  .arco-modal-header {
+    height: 78px;
+  }
+    
+  .arco-modal-footer {
+    @apply justify-end border-none;
+  }
+
+  .arco-modal-content {
+    @apply py-0;
+  }
+
+  textarea {
+    height: 140px;
+    @apply mt-2 bg-card_bg_color_01;
+  }
+  
+  .arco-upload-trigger-picture {
+    @apply bg-card_bg_color_03;
+  }
+
+  .arco-modal-title {
+    @apply text-left;
+  }
+
+  .arco-upload-type-picture-card {
+    width: 140px;
+    height: 140px;
+
+    .arco-upload-trigger, .arco-upload-trigger-picture-wrapper, .arco-upload-trigger-picture {
+      height: 100%;
+    }
+
+    .arco-upload-trigger, .arco-upload-trigger-picture {
+      @apply !border-line_color_01;
+    }
+
+    .arco-icon-plus {
+      font-size: 36px;
+
+      @apply text-line_color_01;
+    }
+  }
+
+  .arco-upload-list-item-picture, .arco-upload-list-item, .arco-upload-list-item-picture-mask {
+    overflow: visible !important;
+  }
+
+  .arco-upload-list-type-picture-card, .arco-upload-list-item, .arco-upload-list-item-picture {
+    width: 140px;
+    height: 140px;
+
+    .arco-upload-list-item-picture-mask {
+      line-height: 0px;
+    }
+
+    .arco-upload-list-remove-icon {
+      font-size: 16px;
+      @apply absolute right-0;
+    }
+
+    .arco-upload-list-preview-icon {
+      @apply hidden;
+    }
+
+    .remove-icon {
+      /* transform: translate(50%, -50%); */
+      @apply text-secondary_color;
+    }
+
+    .remove-icon-container {
+      @apply rounded-full bg-white w-3 h-3;
+
+      transform: translate(30%, -50%);
+    }
+  }
+}

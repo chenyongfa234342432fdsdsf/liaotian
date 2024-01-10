@@ -1,0 +1,46 @@
+:local(.address-book) {
+  @apply w-full h-full bg-card_bg_color_01 flex flex-col;
+
+  border-color: var(--line_color_02);
+  border-style: solid;
+  border-right-width: 1px;
+  box-shadow: 0 6px 12px 0 rgb(0 0 0 / 60%);
+
+  .scroll-show {
+    @apply bg-card_bg_color_03 pb-3;
+
+    max-height: calc(100% - 270px);
+    overflow-y: auto;
+
+  }
+
+
+
+  .search-list {
+    @apply pl-4;
+  }
+
+
+  .address-book-list {
+    @apply pl-4;
+
+    .group-letter {
+      @apply mb-3 text-text_color_02 text-sm;
+    }
+  }
+
+  .people-people-box {
+    @apply flex items-center ml-4 w-full;
+
+    .people-people {
+      @apply text-text_color_01 text-sm my-4;
+    }
+  }
+
+  .jump {
+    @apply text-2xl w-[46px] h-[46px] bg-brand_color flex items-center justify-center rounded-full mt-3 ;
+
+    margin: 0 auto 40px;
+    color: #ffffffff;
+  }
+}

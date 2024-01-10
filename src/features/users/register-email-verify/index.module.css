@@ -1,0 +1,75 @@
+:local(.scoped) {
+  svg {
+    @apply text-base;
+  }
+  @apply w-full px-4 md:w-[1200px] md:px-0 mx-auto flex mt-10 md:mt-[194px] md:mb-32;
+
+  
+  ::placeholder {
+    color: #878787!important;
+    @apply text-sm md:text-base !important;
+  }
+  
+  .registor-image {
+    @apply hidden md:block md:w-[512px] md:h-[496px] md:mr-[260px];
+
+    img {
+      @apply md:w-[512px] md:h-[496px];
+    }
+  }
+
+  
+  .arco-form-label-item {
+    label {
+      @apply text-white;
+    }
+  }
+  
+  .registor-form {
+    @apply w-full md:w-[430px] md:mt-[78px];
+
+    .registor-title {
+      @apply text-white text-2xl md:text-3xl;
+    }
+
+    
+    .registor-form-submit {
+      @apply mt-8;
+
+      .arco-form-label-item {
+        @apply mb-0;
+      }
+      
+      .arco-form-item {
+        @apply mb-8;
+      }
+      
+      .arco-input-inner-wrapper {
+        @apply px-0;
+      }
+
+      .arco-input-inner-wrapper, .arco-input {
+        @apply border-x-0 border-t-0 rounded-none border-[#878787] h-[38px] text-sm md:text-base  md:h-10 text-white;
+      }
+      
+      .arco-input-inner-wrapper-error {
+        @apply bg-black !important;
+      }
+
+      .arco-form-item-wrapper {
+        @apply relative;
+      }
+
+      .arco-form-message {
+        @apply absolute left-0 -bottom-5;
+      }
+    }
+    
+  }
+  
+
+  .registor-submit-button {
+    @apply md:w-full h-[42px] md:h-[54px] flex justify-center items-center bg-[#1B79E7] rounded-sm text-white text-base cursor-pointer;
+  }
+
+}

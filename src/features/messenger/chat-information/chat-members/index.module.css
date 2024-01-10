@@ -1,0 +1,39 @@
+:local(.group-chat-members-list) {
+  @apply bg-bg_color p-6;
+
+  > :first-child {
+    @apply mt-0;
+  }
+}
+
+:local(.member-cell) {
+  @apply flex flex-row items-center mt-6 cursor-pointer;
+
+  .arco-icon:not(.avatar-icon .arco-icon) {
+    font-size: 10px;
+    @apply text-icon_color;
+  }
+
+  .admin-tag {
+    @apply text-brand_color text-xs p-1 bg-brand_color_special_02 rounded mr-3;
+  }
+
+  .muted-icon {
+    .arco-icon {
+      @apply !text-secondary_color;
+    }
+  }
+}
+
+:local(.chat-members) {
+  .set-new-icon-container {
+    width: 40px;
+    height: 40px;
+    @apply rounded-full bg-brand_color flex justify-center items-center cursor-pointer;
+
+    .arco-icon:not(.avatar-icon .arco-icon) {
+      font-size: 20px;
+      @apply text-white;
+    }
+  }
+}

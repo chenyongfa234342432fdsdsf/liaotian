@@ -1,0 +1,16 @@
+:local(.search-input) {
+  @apply mr-4;
+    
+  .arco-input-group {
+    @apply bg-box_bg_color;
+    
+    height: 36px;
+    border-radius: 8px;
+    
+    .arco-input-inner-wrapper {
+      @apply border-0;
+    }
+  }
+    
+    
+}

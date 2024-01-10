@@ -1,0 +1,14 @@
+:local(.blacklist-modal) {
+  .image-overlay {
+    @apply opacity-80 bg-card_bg_color_02 flex justify-center items-center absolute top-0 left-0 bottom-0 right-0 visible hover:visible z-1;
+  }
+
+  .arco-btn {
+    flex: 0 !important;
+    @apply rounded-full;
+  }
+
+  .arco-modal-footer {
+    @apply justify-end border-none;
+  }
+}

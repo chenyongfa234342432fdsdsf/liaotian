@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "com.newbit.im.chat.proto";
+option java_outer_classname = "FriendAddPassPushProto";
+
+message FriendAddPassPush{
+  //用户ID
+  sint64 uid = 1;
+  //用户昵称
+  string nickName =2;
+  //用户头像
+  string avatarPath=3;
+
+}

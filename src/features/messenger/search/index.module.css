@@ -1,0 +1,15 @@
+:local(.search-wrapper) {
+  @apply px-4 py-2 border-b border-solid border-line_color_02 relative;
+
+  --border-radius-small: 8px;
+  
+  .arco-input {
+    @apply py-[7px];
+
+  }
+  
+}
+
+:local(.list-wrapper) {
+  @apply absolute top-0 left-0 w-full h-full overflow-y-auto bg-bg_color;
+}

@@ -1,0 +1,1 @@
+import{p as s}from"./chunk-d8234155.js";import{r as n}from"./chunk-e9cd8943.js";import{j as i}from"./chunk-c1d16543.js";const o=n.createContext(void 0);function p({pageContext:t,children:a}){let r={};return Object.keys(t).forEach(e=>{s.includes(e)||(r[e]=t[e])}),i(o.Provider,{value:r,children:a})}function m(){return n.useContext(o)}o.Consumer;export{p as P,m as u};

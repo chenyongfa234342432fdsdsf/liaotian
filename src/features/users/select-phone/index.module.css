@@ -1,0 +1,120 @@
+:local(.container) { 
+  .container {
+    @apply flex items-center;
+  }
+
+  ::placeholder {
+    color: #878787!important;
+    @apply text-sm md:text-base !important;
+  }
+  
+  .error-container {
+    .container:focus-within .areacodeselect {
+      .arco-select-view {
+        @apply border-[#E95A5C] !important;
+      }
+    }
+    
+    .container:focus-within input {
+      @apply border-[#E95A5C]  !important;
+    }
+  }
+
+  .areacodeselect {
+    @apply w-[94px] relative;
+
+    .arco-select-view {
+      @apply h-[38px] md:h-[40px];
+    }
+    
+    .arco-select .arco-select-arrow-icon {
+      @apply text-white;
+    }
+  }
+  
+  .areacodeselect-input {
+    @apply relative flex-1;
+
+    .arco-input {
+      @apply pl-9 text-sm md:text-base;
+    }
+    
+    .phone-icon {
+      @apply absolute top-[9px] left-[10px];
+    }
+  }
+  
+  .areacodeselect::after {
+    content: '';
+    @apply absolute right-0 top-[14px] bg-white w-[1px] h-[13px] ;
+  }
+
+  /* .arco-form-item-status-error {
+    @apply bg-black !important;
+  }
+
+  .arco-input-inner-wrapper-error {
+    @apply bg-black !important;
+  } */
+
+  .container:focus-within .areacodeselect {
+    .arco-select-view {
+      @apply border-[#1B79E7] !important;
+    }
+  }
+  
+  .container:focus-within input {
+    @apply border-[#1B79E7] !important;
+  }
+  
+  /* .arco-input {
+    @apply bg-black !important;
+  } */
+  
+  .arco-select-view {
+    @apply border-x-0 border-t-0 border-[#878787] rounded-none bg-black !important;
+  }
+  
+  .arco-select-popup {
+    width: calc(100vw - 32px);
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+    @apply md:w-[430px] border-[#878787]  bg-black;
+    
+    .arco-input-group-prefix {
+      @apply ml-4;
+    }
+    
+    /* .arco-input-inner-wrapper {
+      @apply bg-black border border-[#878787] rounded-sm !important;
+    } */
+
+    .arco-input {
+      border: none!important;
+    }
+
+    /* 
+    li {
+      @apply bg-black;
+    }
+
+    li:hover {
+      @apply bg-[#292930];
+    } */
+  }
+
+
+  /* .arco-input-error:hover {
+    @apply bg-bg_color border-sell_down_color !important;
+  }
+  
+  .arco-input-error {
+    @apply border-sell_down_color bg-bg_color;
+  } */
+}
+
+:local(.selectot) { 
+  .arco-select-view {
+    @apply pl-0 !important;
+  }
+}

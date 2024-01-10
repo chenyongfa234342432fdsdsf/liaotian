@@ -1,0 +1,1 @@
+export default '/forget-password'

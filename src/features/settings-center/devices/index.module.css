@@ -1,0 +1,39 @@
+:local(.scoped) {
+  border-right: 1px solid #CDCDCF;
+  @apply bg-card_bg_color_01 h-full w-full border-line_color_02;
+  
+  .devices-list {
+    max-height: calc(100% - 112px);
+    overflow: auto;
+
+    .devices-item {
+      height: 86px;
+      @apply w-full p-6 mb-3 bg-card_bg_color_03 flex justify-between items-center;
+
+      .devices-left {
+        @apply flex flex-col justify-between;
+
+        .devices-name {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          @apply text-base text-text_color_01 w-36;
+        }
+
+        .devices-band {
+          @apply text-text_color_02 text-sm;
+        }
+      }
+
+      .currently {
+        @apply text-sm text-brand_color
+      }
+
+      .delete-icon {
+        @apply text-2xl text-icon_color;
+      }
+    }
+  }
+}
+
+

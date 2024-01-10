@@ -1,0 +1,13 @@
+:local(.chat-record-wrapper) {
+  @apply flex-1 flex justify-end items-center;
+
+  .send-wrapper {
+    @apply w-9 h-9 bg-brand_color rounded-full flex items-center justify-center;
+  }
+
+  .talking-icon {
+    @apply mr-3;
+    
+    font-size: 32px;
+  }
+}

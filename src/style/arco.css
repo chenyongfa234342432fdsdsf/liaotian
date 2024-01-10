@@ -1,0 +1,188 @@
+body {
+  /* --color-fill-2: var(--bg_button_disabled); */
+  .arco-switch-checked {
+    @apply bg-brand_color;
+  }
+
+  .arco-modal {
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 15%);
+  }
+
+  /* 单选框去掉颜色 */
+  .arco-radio:hover,
+  .arco-radio:active {
+    .arco-radio-icon-hover::before {
+      @apply bg-transparent;
+    }
+  }
+
+  .arco-radio > input[type= radio]:focus + .arco-radio-icon-hover::before {
+    @apply bg-transparent;
+  }
+    
+
+  /* input 颜色全局颜色设置 */
+  .arco-input, .arco-input-inner-wrapper {
+    @apply bg-transparent border-line_color_01 rounded-lg;
+
+
+    &:focus {
+      @apply bg-transparent border-brand_color !important;
+    }
+
+    &:hover {
+      @apply bg-transparent  border-line_color_01;
+    }
+    
+    &::placeholder {
+      @apply text-text_color_04;
+    }
+    
+  }
+
+  .arco-input-inner-wrapper-focus { 
+    @apply bg-transparent border-brand_color !important;
+  }
+  
+  /* input 颜色全局颜色设置 */
+  .arco-modal-mask {
+    @apply bg-bg_color_02;
+  }
+  
+  .arco-modal {
+    @apply bg-card_bg_color_03;
+  }
+  
+  /* button 颜色全局颜色设置 */
+  
+  .arco-btn-secondary {
+    /* &:not(.arco-btn-disabled):hover {
+      @apply bg-button_hover_01 !important;
+    } */
+  }
+  
+  .arco-btn-primary {
+    @apply text-button_text_01 bg-brand_color !important;
+  }
+
+  .arco-btn-outline {
+    @apply text-brand_color border-line_color_02 !important;
+  }
+  
+  .arco-btn-status-danger, .arco-btn-status-success {
+    @apply text-button_text_01 !important;
+  }
+  
+  .arco-btn-disabled {
+    @apply bg-brand_color_disable text-text_color_04;
+  }
+  
+  .arco-form-item-error {
+    .arco-input:hover {
+      @apply border-warning_color !important;
+
+      background: #070709;
+    }
+    
+    .arco-input {
+      height: 46px;
+      background: #070709;
+      @apply border-warning_color !important;
+    }
+  }
+  
+  .arco-input-inner-wrapper-error, .arco-select-error, .arco-textarea-error {
+    @apply bg-bg_color border-warning_color !important;
+
+  }
+  
+  /* select 颜色全局颜色设置  */
+  
+  .arco-select-view {
+    @apply bg-bg_color border-line_color_01 !important;
+  }
+  
+  .arco-form-item-status-error {
+    .arco-select-view {
+      @apply border-warning_color  !important;
+    }
+  }
+  
+  /* DatePicker 颜色全局颜色设置  */
+  .arco-picker {
+    @apply bg-transparent border-line_color_01;
+
+
+    &:hover {
+      @apply bg-transparent  border-line_color_01;
+    }
+  }
+  
+  .arco-picker-disabled {
+    @apply bg-card_bg_color_02 border-line_color_01;
+
+    &:hover {
+      @apply bg-card_bg_color_02  border-line_color_01;
+    }
+  }
+  
+  .arco-picker-range-container {
+    .arco-picker-cell-selected {
+      .arco-picker-date-value {
+        @apply text-button_text_02;
+      }
+    }
+  }
+  
+  /* Dropdown 全局样式修改 */
+  
+  .arco-dropdown-menu {
+    @apply border-0 rounded-lg px-2 py-2;
+
+    .arco-dropdown-menu-item {
+      &:hover {
+        @apply bg-bg_color_03 rounded;
+      }
+    }
+  }
+  
+  /* Breadcrumb 全局样式修改 */
+  
+  .arco-breadcrumb {
+    .arco-breadcrumb-item:last-child {
+      @apply font-medium text-text_color_01;
+    }
+
+    .arco-breadcrumb-item {
+      @apply text-text_color_02;
+    }
+  }
+  
+  /* Popconfirm 全局样式修改 */
+  
+  .arco-popconfirm-content {
+    @apply border-0;
+  }
+  
+  /* Drawer 全局样式修改 */
+  
+  .arco-drawer-mask {
+    @apply bg-bg_color_02;
+  }
+
+  /* Radio */
+  .arco-radio-checked .arco-radio-mask {
+    @apply bg-brand_color border-brand_color;
+  }
+
+  .arco-radio-checked:hover .arco-radio-mask {
+    @apply border-brand_color_hover;
+  }
+
+
+  /* text area */
+  .arco-textarea.arco-textarea-focus, .arco-textarea:focus {
+    @apply border-brand_color;
+  }
+
+}

@@ -1,0 +1,13 @@
+:local(.group-qr-code) {
+  min-height: 568;
+
+  @apply flex flex-col items-center justify-center bg-bg_color p-8;
+
+  .arco-btn {
+    min-width: 160px;
+    height: 40px;
+    border-radius: 10px;
+
+    @apply text-base font-medium text-button_text_01;
+  }
+}

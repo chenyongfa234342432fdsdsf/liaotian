@@ -1,0 +1,1 @@
+import{a as o}from"./chunk-b745fb4d.js";import{r as t}from"./chunk-e9cd8943.js";var c=function(){var e=t.useRef(!1);return t.useEffect(function(){return e.current=!1,function(){e.current=!0}},[]),e};const i=c;function v(e){var u=i(),r=o(t.useState(e),2),n=r[0],a=r[1],f=t.useCallback(function(s){u.current||a(s)},[]);return[n,f]}export{v as u};

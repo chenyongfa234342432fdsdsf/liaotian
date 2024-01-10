@@ -1,0 +1,29 @@
+:local(.confirm-btn-pop) {
+  @apply p-6 bg-card_bg_color_03 w-[500px] h-[188px] ;
+
+  border-radius: 4px;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 15%);
+
+  .title {
+    @apply text-xl font-medium mb-6;
+  }
+
+  .content {
+    @apply text-text_color_01 text-base;
+  }
+
+  .btn-box {
+    @apply text-sm flex justify-end mt-5;
+
+    .cancel-btn {
+      border-radius: 45px;
+      @apply border border-line_color_01 font-medium h-[38px] px-[25px] text-brand_color flex items-center bg-card_bg_color_03;
+    }
+
+    .confirm-btn {
+      border-radius: 45px;
+      @apply font-medium h-[38px] px-[25px] text-button_text_01 bg-brand_color ml-4 flex items-center;
+        
+    }
+  }
+}

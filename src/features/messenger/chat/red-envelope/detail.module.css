@@ -1,0 +1,33 @@
+:local(.sender) {
+  @apply flex justify-center;
+ 
+  
+  .grid-box {
+    @apply grid gap-2;
+
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    max-width: 90%;
+  }
+
+  .sender {
+    @apply text-text_color_01 text-left text-xl font-medium  text-ellipsis overflow-hidden whitespace-nowrap;
+
+    
+  }
+
+  .bless {
+    @apply text-text_color_02 text-left mb-6 text-sm  text-ellipsis overflow-hidden whitespace-nowrap;                              
+
+    grid-column-start: 2;
+  }
+
+}
+
+:local(.tips) {
+  @apply text-text_color_02 text-sm flex items-center pl-6;
+
+  height: 50px;
+  vertical-align: center;
+}
+

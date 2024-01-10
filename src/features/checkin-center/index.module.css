@@ -1,0 +1,150 @@
+:local(.scoped) {
+  @apply w-full h-full bg-card_bg_color_02;
+
+  .headbg {
+    height: 240px;
+    background: linear-gradient(176deg, #FFB400 3.13%, #FF6B00 240.72%);
+    @apply absolute top-0 right-0 left-0 z-0 w-full
+  }
+
+  .headbox {
+    min-width: 1024px;
+    height: 152px;
+    margin: 0 auto;
+    padding-top: 90px;
+    @apply relative z-1 items-center w-4/5 text-button_text_01 text-xl;
+
+    .backicon {
+      color: #ffffff;
+    }
+  }
+
+  .content {
+    min-width: 1024px;
+    margin: 0 auto;
+    @apply relative z-1 justify-start w-4/5 pb-5 m-auto;
+
+    .calendar {
+      min-width: 820px;
+      height: 912px;
+      @apply w-auto bg-bg_color p-9 rounded-2xl;
+
+      .remindbox {
+        @apply justify-between;
+
+        .remindlabel {
+          @apply text-text_color_01 text-base font-medium;
+        }
+
+        .remindicon {
+          @apply text-text_color_01 text-base;
+
+          .remindtxt {
+            margin-right: 10px
+          }
+
+        }
+      }
+
+      /* 日历 S */
+      .calendarbox {
+        min-width: 760px;
+        @apply flex flex-col w-auto h-auto pt-4 pb-4;
+      }
+      
+      .calendar-month {
+        @apply flex items-center justify-start pb-8;
+      }
+      
+      .calendar-month-switch {
+        border-radius: 20px;
+        user-select: none;
+        @apply flex items-center justify-center w-5 h-5 cursor-pointer bg-bg_sr_color text-icon_color;
+
+        .left-icon {
+          transform: rotate(180deg);
+        }
+      }
+      
+      .monthtime {
+        margin: 0 8px;
+        @apply text-text_color_01 text-xl;
+      }
+      
+      .calendar-title {
+        grid-column-gap: 24px;
+        grid-template-columns: repeat(7, 1fr);
+        @apply grid pb-5
+      }
+      
+      .calendar-content {
+        grid-row-gap: 16px;
+        /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+        grid-column-gap: 24px;
+        grid-template-columns: repeat(7, 1fr);
+        @apply grid w-full
+      }
+      
+      .calendar-week {
+        @apply flex justify-center items-center
+      }
+      
+      .calendar-day {
+        aspect-ratio: 1;
+        @apply flex flex-col items-center justify-start overflow-hidden border border-solid border-gray-200 rounded-lg;
+
+        .calendardaytop {
+          width: 100%;
+          @apply flex items-center justify-center h-9 bg-card_bg_color_02 text-toast_bg_color;
+        }
+
+        .calendardaybottom {
+          flex: 1;
+          @apply flex items-center justify-center w-full;
+        }
+      }
+
+      .signedcalendar-day {
+        @apply border border-solid border-yellow-300;
+
+        .calendardaytop {
+          background-color: #FDD873;
+          @apply text-toast_bg_color
+        }
+      }
+
+      .nocalendar-day {
+        @apply border-bg_sr_color;
+
+        .calendardaytop {
+          @apply bg-bg_sr_color text-text_color_02 
+        }
+      }
+
+      .overcalendar-day {
+        @apply border-bg_sr_color;
+
+        .calendardaytop {
+          @apply bg-bg_sr_color text-text_color_04 
+        }
+      }
+
+      /* 日历 E */
+      .signinnow {
+        width: 327px;
+        height: 60px;
+        margin: 32px auto;
+        background: linear-gradient(180deg, #FFC55E 0%, #FFA402 100%);
+        border-radius: 40px;
+        @apply flex items-center justify-center text-button_text_01 cursor-pointer text-2xl; 
+      }
+
+      .already {
+        background: none;
+        @apply bg-bg_sr_color text-text_color_04
+      }
+    }
+
+   
+  }
+}

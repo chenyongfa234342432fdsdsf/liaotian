@@ -1,0 +1,21 @@
+/* 绑定成功 */
+:local(.bindsuccess) {
+  @apply flex flex-col bg-card_bg_color_03 items-center pb-10 pt-9;
+
+  .success-icon {
+    border-radius: 4px;
+    @apply w-10 h-10 bg-icon_color flex justify-center items-center mb-5;
+
+    .mobile-icon {
+      @apply text-button_text_01 text-2xl
+      }
+  }
+
+  .success-label {
+    @apply text-sm text-text_color_02 mb-1 p-3 pt-0 pb-0
+    }
+
+  h3 {
+    @apply text-base text-text_color_01
+    }
+}

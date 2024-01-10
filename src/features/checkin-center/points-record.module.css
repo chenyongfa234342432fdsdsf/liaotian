@@ -1,0 +1,62 @@
+:local(.points) {
+  min-width: 360px;
+  height: 912px;
+  @apply flex-1 w-auto ml-10 bg-bg_color p-9 rounded-2xl;
+
+  .arco-empty-wrapper {
+    @apply mt-28
+}
+
+  /* 积分记录S */
+
+  .pointstop {
+    @apply justify-between border-line_color_02 border-b pb-6 mb-0;
+
+    .pointstopleft {
+      @apply text-text_color_01 text-2xl
+      }
+
+    .pointstopright {
+      .mypointlabel {
+        @apply text-text_color_01 text-base
+        }
+
+      .mynum {
+        @apply text-text_color_special_07 text-2xl
+        }
+    }
+  }
+
+  .pointslist {
+    .point-list-box {
+      max-height: 786px;
+      @apply w-full border-none
+    }
+
+    .arco-list-item {
+      padding: 0;
+    }
+
+    .pointitem {
+      height: 90px;
+      @apply flex items-center justify-between w-full border-line_color_02;
+
+      .pointitemleft {
+          
+        @apply flex flex-col;
+
+        .remark {
+          @apply text-text_color_01 text-base mb-3;
+        }
+
+        .time {
+          @apply text-text_color_03 text-sm;
+        }
+      }
+
+      .pointitemright {
+        @apply text-text_color_special_07 text-base;
+      }
+    }
+  }
+}

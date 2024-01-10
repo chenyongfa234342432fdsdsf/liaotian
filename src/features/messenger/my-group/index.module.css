@@ -1,0 +1,59 @@
+:local(.my-group) {
+  height: 100%;
+  border-color: var(--line_color_02);
+  border-style: solid;
+  border-right-width: 1px;
+  @apply bg-card_bg_color_01;
+
+  .nav-item {
+    @apply flex bg-card_bg_color_03 h-20 items-center pl-4 cursor-pointer ;
+
+    .nav-ico-box {
+      @apply w-12 h-12 bg-brand_color relative flex justify-center items-center;
+
+      border-radius: 50%;
+
+      .icon-color {
+        color: #FFFFFF;
+      }
+    }
+
+    .nav-text {
+      @apply text-text_color_01 text-base leading-[48px] ml-3;
+    }
+  }
+
+  .group-tabs {
+    @apply flex bg-card_bg_color_03 mt-[10px];
+
+    height: 54px;
+
+    .has-found-join {
+      @apply flex flex-1 justify-center items-center text-text_color_02 text-[14px] font-medium cursor-pointer;
+
+      border-bottom: solid 4px var(--card_bg_color_03);
+    }
+
+    .has-found-join-activate {
+      @apply text-brand_color;
+
+      border-bottom: solid 4px var(--brand_color);
+    }
+
+  }
+
+  .group-list {
+    @apply bg-card_bg_color_03;
+
+    max-height: calc(100% - 258px);
+    overflow: auto;
+  }
+
+  .found-list {
+    @apply pt-4;
+  }
+
+  .join-list {
+    @apply pt-4;
+  }
+}

@@ -1,0 +1,40 @@
+:local(.scoped) {
+  > * {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  >:first-child {
+    margin-top: 0;
+  }
+
+  >:last-child {
+    margin-bottom: 0;
+  }
+
+  section {
+    @apply bg-bg_color w-full px-6 py-4;
+  }
+
+  .info-section {
+    min-height: 344px;
+
+    @apply py-0;
+  }
+
+  .note-section {
+    min-height: 90px;
+  }
+
+  .media-section {
+    min-height: 50px;
+  }
+
+  .settings-section {
+    min-height: 50px;
+  }
+
+  .common-settings-section {
+    min-height: 50px;
+  }
+}

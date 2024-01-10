@@ -1,0 +1,1 @@
+import{create as e}from"zustand";import{createTrackedSelector as a}from"react-tracked";import u from"immer";import{devtools as s}from"zustand/middleware";function m(t){return{layoutProps:{},setLayoutProps:o=>t(()=>o?{layoutProps:o}:{}),columnsDataByCd:{},setColumnsDataByCd:o=>t(u(r=>{r.columnsDataByCd=o}))}}const n=e(s(m,{name:"layout-store"})),f=a(n);export{n as b,f as u};

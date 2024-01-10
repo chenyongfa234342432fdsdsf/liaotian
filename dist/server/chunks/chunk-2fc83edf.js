@@ -1,0 +1,1 @@
+import r from"dayjs";import m from"dayjs/plugin/utc.js";import e from"dayjs/plugin/timezone.js";import n from"dayjs/plugin/customParseFormat.js";function f(o){return o!=null&&o.toString()?o:"--"}r.extend(m);r.extend(e);r.extend(n);function x(o,t="YYYY-MM-DD HH:mm:ss",i=!0){return o?r(o).format(t):f(o)}export{x as f};

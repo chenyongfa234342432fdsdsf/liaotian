@@ -1,0 +1,18 @@
+:local(.score) {
+  .score {
+    @apply text-text_color_special_01 text-center;
+
+    font-size: 36px;
+
+  }
+
+  .points {
+    font-size: 14px;
+  }
+
+  .link {
+    @apply text-text_color_special_01 text-center;
+
+    font-size: 14px;
+  }
+}

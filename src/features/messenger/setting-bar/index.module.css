@@ -1,0 +1,13 @@
+:local(.setting-bar-wrapper) {
+  @apply px-4 py-2.5 flex justify-between items-center bg-box_bg_color border-b border-solid border-line_color_02;
+
+  height: var(--layout-header-height);
+
+  .tips-apply-number {
+    @apply absolute w-3 h-3 bg-secondary_color text-[8px] flex justify-center items-center text-button_text_01;
+
+    top: -2px;
+    right: -5px;
+    border-radius: 50%;
+  }
+}

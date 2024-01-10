@@ -1,0 +1,23 @@
+:local(.address-book-nav) {
+  @apply bg-brand_color_animate px-6 pt-[68px] w-full;
+
+  height: 112px;
+
+  .foot-box {
+    @apply flex justify-between;
+
+    .nav-left {
+      @apply text-button_text_01 font-medium;
+
+      font-size: 20px;
+    }
+
+    .nav-right {
+      @apply self-center;
+
+      .icon-address-book-color {
+        @apply text-button_text_01 ; 
+      }
+    }
+  }
+}

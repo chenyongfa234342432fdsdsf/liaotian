@@ -1,0 +1,23 @@
+:local(.scoped) {
+  @apply h-full bg-card_bg_color_01;
+  
+  .submit-icon {
+    color: #ffffff;
+  }
+
+  .arco-input {
+    @apply border-none px-0 !py-3;
+  }
+
+  .arco-input-inner-wrapper {
+    @apply border-t-0 border-b-2 border-x-0 px-0 rounded-none;
+
+    input::placeholder {
+      @apply text-text_color_04 text-base;
+    }
+  }
+
+  .user-count-down-btn-wrap button {
+    @apply font-medium px-2.5;
+  }
+}

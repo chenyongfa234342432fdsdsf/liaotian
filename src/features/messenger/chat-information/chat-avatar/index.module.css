@@ -1,0 +1,15 @@
+:local(.scoped) {
+  @apply p-8 text-center flex flex-col items-center;
+
+  .avatar-name {
+    @apply text-2xl mt-4 mb-1;
+  }
+
+  .chat-avatar {
+    .default-avatar-icon svg {
+      font-size: 110px !important;
+    }
+  }
+
+  
+}

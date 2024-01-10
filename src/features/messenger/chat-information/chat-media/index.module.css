@@ -1,0 +1,42 @@
+:local(.contact-media) {
+  .img-media-items {
+    max-width: 370px;
+    max-height: 118px;
+    @apply mt-3 space-x-2 grid grid-cols-3;
+
+    > * {
+      max-width: 118px;
+    }
+  }
+}
+
+:local(.img-media-item) {
+  padding: 12px;
+
+  @apply flex justify-center items-center bg-card_bg_color_01 rounded-lg relative;
+
+  .media-img, .arco-skeleton, .arco-skeleton-image, .arco-skeleton-header {
+    @apply cursor-pointer relative aspect-square flex grow w-auto h-auto;
+
+    img {
+      aspect-ratio: 1;
+      @apply object-cover flex;
+    }
+  }
+
+  .duration {
+    bottom: 12px;
+    left: 12px;
+    @apply absolute;
+  }
+}
+
+:local(.video-preview) {
+  .arco-modal-content {
+    @apply p-0 flex justify-center items-center h-0;
+  }
+
+  .video {
+    max-height: 70vh;
+  }
+}

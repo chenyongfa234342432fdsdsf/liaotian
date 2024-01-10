@@ -1,0 +1,28 @@
+:local(.upscoped) {
+  @apply w-full flex justify-center items-center h-64;
+
+  .avatar-box {
+    .upload {
+      width: 200px!important;
+      height: 200px!important;
+      background: linear-gradient(180deg, #B4B6BE 0%, #999BA1 100%);
+      @apply relative flex justify-center items-center rounded-full m-auto;
+
+      .headimg {
+        @apply rounded-full
+}
+
+      .default-img {
+        width: 84px;
+      }
+
+      .upload-icon-box {
+        @apply absolute w-10 h-10 bottom-0 right-0 bg-text_color_01 border-2 border-solid border-gray-200 rounded-full flex justify-center items-center;
+
+        .upload-icon {
+          @apply text-xl text-bg_color;
+        }
+      }
+    }
+  }
+}

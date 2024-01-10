@@ -1,0 +1,67 @@
+:local(.group-com) {
+  .nav-item {
+    @apply flex h-[60px] cursor-pointer mb-3;
+
+
+    .nav-item-left {
+      @apply flex  justify-center items-center;
+
+      .nav-ico-box {
+        @apply w-12 h-12 flex justify-center items-center;
+
+        background: linear-gradient(180deg, #B4B6BE 0%, #999BA1 100%);
+        border-radius: 50%;
+
+        .icon-color {
+          color: #FFFFFF;
+        }
+      }
+
+  
+    }
+
+    .nav-item-right {
+      @apply mr-4 text-text_color_02 flex-1  ml-4;
+
+      .right-top {
+        @apply flex justify-between;
+
+        .group-name {
+          @apply text-text_color_01 text-[16px] leading-normal;
+        }
+
+        .group-number {
+          @apply text-text_color_02 ml-1 ;
+        }
+      }
+
+      .right-bottom {
+        @apply flex justify-between mt-2;
+
+        .w {
+          @apply text-text_color_02 text-[12px];
+
+          width: 200px;
+          line-height: 21px
+
+        }
+
+        .message2 {
+          width: 280px
+        }
+
+        .message3 {
+          width: 360px
+        }
+      }
+    }
+  }
+
+  .line {
+    @apply bg-line_color_02 mb-3 ml-[82px];
+
+    width: calc(100% - 82px);
+    height: 1px
+  }
+   
+}

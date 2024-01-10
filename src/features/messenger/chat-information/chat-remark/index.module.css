@@ -1,0 +1,26 @@
+:local(.common-chat-remark) {
+  .edit-icon {
+    font-size: 24px;
+    @apply text-icon_color ml-auto;
+  }
+
+  .remark-label {
+    margin-bottom: 10px;
+  }
+}
+
+:local(.chat-remark) {
+  @apply shadow-none px-0 py-0 bg-transparent h-auto;
+
+  .icon-box {
+    @apply !bg-transparent;
+  }
+
+  .input-label {
+    @apply text-text_color_01 mb-3 text-base;
+  }
+
+  .enter-input {
+    @apply !bg-transparent;
+  }
+}

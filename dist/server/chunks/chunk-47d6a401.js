@@ -1,0 +1,1 @@
+import{useState as h,useCallback as a,useEffect as c}from"react";const i=()=>{const[e,t]=h(window.location.hash),n=a(()=>{t(window.location.hash)},[]);c(()=>(window.addEventListener("hashchange",n),()=>{window.removeEventListener("hashchange",n)}),[]);const o=a(s=>{s!==e&&(window.location.hash=s)},[e]);return{hash:e,updateHash:o}},d=i;export{d as u};

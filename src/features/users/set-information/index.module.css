@@ -1,0 +1,120 @@
+:local(.scoped) {
+  @apply w-full h-full md:px-0 mx-auto flex justify-center bg-card_bg_color_01 items-start;
+
+  .information {
+    @apply flex flex-col justify-start items-center w-96;
+
+    h1 {
+      @apply pt-28 w-full text-left
+  }
+
+    
+
+    .upload-head {
+      width: 82px;
+      height: 82px;
+      @apply mt-8;
+
+      .info-box {
+        width: 82px;
+        height: 82px;
+      
+        .upload {
+          width: 82px!important;
+          height: 82px!important;
+
+          .default-img {
+            @apply w-7
+        }
+
+          .headimg {
+            width: 82px;
+            height: 82px;
+          }
+
+          .upload-icon-box {
+            width: 26px;
+            height: 26px;
+            border-color: var(--bg_color);
+
+            .upload-icon {
+              @apply flex justify-center items-center text-sm
+        }
+          }
+        }
+      }
+
+    }
+
+    .enter-box {
+      @apply flex justify-start w-96 h-20 bg-bg_color rounded-lg p-3 flex-col items-start mt-8;
+     
+      .enter-input {
+        caret-color: #7062CA;
+        @apply flex-1 w-full text-base font-medium bg-bg_color;
+      }
+  
+      .max-num {
+        @apply text-sm text-secondary_color
+      }
+     
+    }
+
+    .commit-btn {
+      height: 46px;
+      border-radius: 10px;
+      @apply bg-brand_color mt-14 w-96;
+
+      &:hover {
+        @apply bg-brand_color
+      }
+    }
+
+
+
+    .login-content {
+      @apply w-96 h-auto rounded-xl bg-card_bg_color_03 pl-4 flex flex-col;
+    
+      .list-item {
+        min-height: 48px;
+        @apply flex items-center justify-between border-b border-solid border-line_color_02;
+    
+        .area {
+          @apply text-brand_color text-base font-medium bg-card_bg_color_03;
+
+          &::placeholder {
+            @apply text-base font-medium text-text_color_04
+          }
+        }
+    
+        .area-code {
+          @apply text-text_color_01 text-base w-auto mr-3 font-medium;
+        }
+    
+        .input-box {
+          @apply flex-1 h-auto text-text_color_01 font-medium bg-card_bg_color_03;
+
+          &::placeholder {
+            @apply text-base font-medium text-text_color_04
+          }
+        }
+
+        .password-input {
+          @apply flex-1 h-auto text-text_color_01 font-medium;
+        }
+
+        .getcode {
+          @apply text-brand_color text-base font-medium;
+        }
+      }
+
+      .last-item {
+        border: none;
+      }
+       
+    }
+
+  }
+
+
+}

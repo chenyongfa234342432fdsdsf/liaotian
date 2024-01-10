@@ -1,0 +1,45 @@
+:local(.crate-group) {
+  @apply h-full bg-card_bg_color_01;
+
+  .group-name-input {
+    @apply border-0 pl-4 bg-card_bg_color_03;
+
+    border-radius: 0%;
+
+    &:focus {
+      background-color: var(--card_bg_color_03) !important;
+    }
+
+    &:hover {
+      background-color: var(--card_bg_color_03) !important;
+    }
+  }
+
+  .group-info {
+    @apply overflow-y-auto pb-[150px];
+
+    max-height: calc(100% - 112px);
+
+    .group-name-text {
+      @apply text-[14px] text-text_color_02 pl-4 pb-3 pt-[26px] bg-card_bg_color_03 -mt-[26px];
+    }
+  }
+
+  .separate-line1 {
+    @apply h-[2px] bg-line_color_02 ;
+  }
+
+  .separate-line {
+    @apply h-[32px] bg-card_bg_color_03;
+  }
+
+  .separate-line2 {
+    @apply h-[10px] bg-card_bg_color_01;
+  }
+
+  .selected-list {
+    @apply pl-4 pt-4 pb-4 bg-card_bg_color_03;
+  }
+
+
+}

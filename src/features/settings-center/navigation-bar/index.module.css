@@ -1,0 +1,13 @@
+:local(.scoped) {
+  
+  @apply w-full bg-brand_color_animate text-button_text_01 h-28 pt-[50px] text-xl px-6 flex justify-between items-center;
+
+  .navigation-link,
+  .head-box {
+    @apply flex items-center;
+  }
+
+  .back-icon {
+    @apply text-button_text_01 pr-6;
+  }
+}

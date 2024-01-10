@@ -1,0 +1,302 @@
+body {
+  /* 色版 */
+  --pe-01: #00004D;
+  --pe-02: #100D6C;
+  --pe-03: #29228B;
+  --pe-04: #5045B1;
+  --pe-05: #7062CA;
+  --pe-06: #8879D5;
+  --pe-07: #A292DF;
+  --pe-08: #BBADEA;
+  --pe-09: #D4CDFF;
+  --pe-10: #E5E1FC;
+  --pe-11: rgb(112 98 202 / 10%);
+  --rd-01: #4D000A;
+  --rd-02: #760B16;
+  --rd-03: #A01E26;
+  --rd-04: #C9383D;
+  --rd-05: #F35A5A;
+  --rd-06: #F57A75;
+  --rd-07: #F89891;
+  --rd-08: #FAB5AE;
+  --rd-09: #FDD1CB;
+  --rd-10: #FFECE8;
+  --rd-11: rgb(243 90 90 / 10%);
+
+  /* 中性色 */
+  --nc-01: #010101;
+  --nc-02: #848589;
+  --nc-03: #9B9CA2;
+  --nc-04: #ABABAB;
+  --nc-05: #C1C1C1;
+  --nc-06: #BEBEBE;
+  --nc-07: #CDCDCF;
+  --nc-08: #F0F0F0;
+  --nc-09: #EFEFEF;
+  --nc-10: #F6F6F6;
+  --nc-11: #EAEAEA;
+  --nc-12: #FFFFFF;
+  --nc-13: #FFFFFF;
+  --nc-14: #E2DAFF;
+  --nc-15: #FFFFFF;
+  --nc-16: #17232D;
+  --nc-17: rgb(255 255 255 / 80%);
+  --nc-18: rgb(193 193 193 / 20%);
+  --nc-19: #E9E9E9;
+
+  /* avatar */
+  --bg-01: #D652C9;
+  --bg-02: #C4D652;
+  --bg-03: #FF7C60;
+  --bg-04: #52D697;
+  --bg-06: #5AA2F8;
+  --bg-07: #6452D6;
+  --bg-08: #52D6CE;
+  --bg-09: #8471F9;
+  --bg-10: #5277D6;
+
+  /* 红包 */
+  --rp-01: #FB9F3C;
+  --rp-02: #C89A46;
+  --rp-03: #F2BD00;
+  --rp-04: #FFDFAC;
+
+  /* 聊天 */
+  --call-01: #111B23;
+  --call-02: rgb(23 36 46 / 90%);
+  --call-03: #2B3740;
+  --call-04: #E7E9EA;
+  --call-05: #434E56;
+  --call-06: #35414A;
+  --call-07: #4171ED;
+  --call-08: #DD5A32;
+  --call-09: #E96934;
+  --call-10: #FF6D01;
+  --call-11: #FF9E45;
+
+  /** arco 写在这里才能生效 */
+  --primary-6: var(--pe-05);; 
+
+}
+
+body[arco-theme= 'dark'] {
+  /* 色版 */
+  --pe-01: #EFE8FF;
+  --pe-02: #D5CAF4;
+  --pe-03: #BBADEA;
+  --pe-04: #493EAB;
+  --pe-05: #7062CA;
+  --pe-06: #8879D5;
+  --pe-07: #29228B;
+  --pe-08: #473D89;
+  --pe-09: #2B2166;
+  --pe-10: #302572;
+  --pe-11: rgb(112 98 202 / 10%);
+  --rd-01: #FFECE8;
+  --rd-02: #FDD1CB;
+  --rd-03: #FAB5AE;
+  --rd-04: #F89891;
+  --rd-05: #F57A75;
+  --rd-06: #F35A5A;
+  --rd-07: #C9383D;
+  --rd-08: #A01E26;
+  --rd-09: #760B16;
+  --rd-10: #4D000A;
+  --rd-11: rgb(243 90 90 / 10%);
+  
+  /* 中性色 */
+  --nc-01: #ffffff;
+  --nc-02: #8D949D;
+  --nc-03: #8D949D;
+  --nc-04: #666D76;
+  --nc-05: #44505B;
+  --nc-06: #23384D;
+  --nc-07: #1E3144;
+  --nc-08: #1A2B3C;
+  --nc-09: #1E2B36;
+  --nc-10: #0F1820;
+  --nc-11: #131E26;
+  --nc-12: #0E1822;
+  --nc-13: #FFFFFF;
+  --nc-14: #5A4FA0;
+  --nc-15: #17232D;
+  --nc-16: #202F3C;
+  --nc-17: rgb(0 0 0 / 40%);
+  --nc-18: rgb(68 80 91 / 20%);
+  --nc-19: #182737;
+  
+  /* avatar */
+  --bg-01: #D652C9;
+  --bg-02: #C4D652;
+  --bg-03: #FF7C60;
+  --bg-04: #52D697;
+  --bg-06: #5AA2F8;
+  --bg-07: #6452D6;
+  --bg-08: #52D6CE;
+  --bg-09: #8471F9;
+  --bg-10: #5277D6;
+  
+  /* 红包 */
+  --rp-01: #FB9F3C;
+  --rp-02: #C89A46;
+  --rp-03: #F2BD00;
+  --rp-04: #FFDFAC;
+  
+  /* 聊天 */
+  --call-01: #111B23;
+  --call-02: rgb(23 36 46 / 90%);
+  --call-03: #2B3740;
+  --call-04: #E7E9EA;
+  --call-05: #434E56;
+  --call-06: #35414A;
+  --call-07: #4171ED;
+  --call-08: #DD5A32;
+  --call-09: #E96934;
+  --call-10: #FF6D01;
+  --call-11: #FF9E45;
+}
+
+
+body {
+  /* 品牌色 - 重点元素/按钮/文字等 */
+  --brand_color: var(--pe-05);
+  --brand_color_hover: var(--pe-06);
+  --brand_color_animate: var(--pe-04); /* 辅助色 */
+  --brand_color_special: var(--pe-07);
+  --brand_color_disable: var(--pe-08);
+  --brand_color_light_bg: var(--pe-10);
+  --brand_color_dark_bg: var(--pe-03);
+  --brand_color_special_02: var(--pe-11);
+  --brand_color_special_03: var(--pe-09);
+
+  /* 提示 Tips */
+  --tips_color: var(--pe-05);
+  --tips_color_hover: var(--pe-06);
+  --tips_color_animate: var(--pe-04);
+  --tips_color_disable: var(--pe-08);
+  --tips_color_special: var(--pe-07);
+  --tips_color_special_02: var(--pe-11);
+  --tips_color_lightbg: var(--pe-10);
+
+  /* 红色/辅助色 */
+  --secondary_color_animate: var(--rd-04);
+  --secondary_color: var(--rd-05);
+  --secondary_color_hover: var(--rd-06);
+  --secondary_color_special: var(--rd-07);
+  --secondary_color_disable: var(--rd-08);
+  --secondary_color_light_bg: var(--rd-10);
+  --secondary_color_special_02: var(--rd-11);
+  --warning_color_special: var(--rd-07);
+  --warning_color_hover: var(--rd-06);
+  --warning_color: var(--rd-05);
+  --warning_color_animate: var(--rd-04);
+  --warning_color_disable: var(--rd-08);
+  --warning_color_light_bg: var(--rd-10);
+  --warning_color_special_02: var(--rd-11);  
+
+
+  /* 中性色/文字/填充 */
+  --text_color_04: var(--nc-05);
+  --text_color_03: var(--nc-04);
+  --text_color_02: var(--nc-02);
+  --text_color_01: var(--nc-01);
+  --icon_color: var(--nc-03);
+  --line_color_02: var(--nc-07);
+  --line_color_01: var(--nc-06);
+  --bg_sr_color: var(--nc-08);
+  --box_bg_color: var(--nc-09);
+  --card_bg_color_01: var(--nc-10);
+  --card_bg_color_03: var(--nc-15);
+  --card_bg_color_02: var(--nc-11);
+  --bg_color: var(--nc-12);
+  --bg_color_02: var(--nc-17);
+  --bg_color_03: var(--nc-18);
+  --button_text_01: var(--nc-13);
+  --button_text_02: var(--nc-14);
+  --button_animate: var(--nc-19);
+  --toast_bg_color: var(--nc-16);
+
+
+  /* avatar */
+  --avatar_bg_01: var(--bg-01);
+  --avatar_bg_02: var(--bg-02);
+  --avatar_bg_03: var(--bg-03);
+  --avatar_bg_04: var(--bg-04);
+  --avatar_bg_05: var(--bg-05);
+  --avatar_bg_06: var(--bg-06);
+  --avatar_bg_07: var(--bg-07);
+  --avatar_bg_08: var(--bg-08);
+  --avatar_bg_09: var(--bg-09);
+  --avatar_bg_10: var(--bg-10);
+    
+  /* 红包/辅助色 */
+  --red_packet_bg: var(--rp-01);
+  --text_color_special_01: var(--rp-02);
+  --text_color_special_02: var(--rp-03);
+  --text_color_special_03: var(--rp-04);
+
+  /* 聊天/辅助色 */
+  --call_bg_color_01: var(--call-01);
+  --call_bg_color_02: var(--call-02);
+  --call_bg_color_03: var(--call-03);
+  --call_bg_color_04: var(--call-04);
+  --call_icon_color: var(--call-05);
+  --call_line_color: var(--call-06);
+  --text_color_special_04: var(--call-07);
+  --text_color_special_05: var(--call-08);
+  --text_color_special_06: var(--call-09);
+  --text_color_special_07: var(--call-10);
+  --bg_color_special_01: var(--call-11);
+}
+
+body[arco-theme= 'dark'] {
+  /* 红色/辅助色 */
+  --secondary_color_animate: var(--rd-07);
+  --secondary_color: var(--rd-06);
+  --secondary_color_hover: var(--rd-05);
+  --secondary_color_special: var(--rd-04);
+  --secondary_color_disable: var(--rd-09);
+  --secondary_color_special_02: var(--rd-11);
+  --warning_color_special: var(--rd-04);
+  --warning_color_hover: var(--rd-05);
+  --warning_color: var(--rd-06);
+  --warning_color_animate: var(--rd-07);
+  --warning_color_disable: var(--rd-09);
+}
+
+
+
+
+
+/* merchant theme */
+
+body[theme-business= 'merchant-light'] {
+  /* 色版 */
+  --pe-01: #00004D;
+  --pe-02: #100D6C;
+  --pe-03: #123DA0;
+  --pe-04: #225AC9;
+  --pe-05: #377BF3;
+  --pe-06: #5998F5;
+  --pe-07: #7CB2F8;
+  --pe-08: #9FCAFA;
+  --pe-09: #B6D0FF;
+  --pe-10: #D3E3FF;
+  --pe-11: rgb(55 123 243 / 10%);
+}
+
+
+body[theme-business= 'merchant-dark'] {
+  /* 色版 */
+  --pe-01: #E8F4FF;
+  --pe-02: #C3E0FD;
+  --pe-03: #9FCAFA;
+  --pe-04: #225AC9;
+  --pe-05: #377BF3;
+  --pe-06: #5998F5;
+  --pe-07: #123DA0;
+  --pe-08: #1F4D9E;
+  --pe-09: #1A3668;
+  --pe-10: #1E3C72;
+  --pe-11: rgb(55 123 243 / 10%);
+}

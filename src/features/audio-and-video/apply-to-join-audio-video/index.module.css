@@ -1,0 +1,12 @@
+:local(.apply-join-container) {
+  top: 12px;
+  @apply flex justify-center absolute w-full z-90 cursor-pointer;
+  
+  .apply-join {
+    width: 94%;
+    height: 38px;
+    @apply bg-card_bg_color_03 rounded flex items-center text-text_color_01 text-sm justify-between px-3;
+  }
+
+
+}

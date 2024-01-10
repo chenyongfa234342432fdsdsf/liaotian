@@ -1,0 +1,13 @@
+:local(.scoped) {
+  height: 70px;
+  padding: 0 24px;
+  @apply w-full bg-bg_color flex items-center;
+
+  .listbox {
+    @apply flex justify-between items-center w-full h-full;
+
+    .list-label {
+      @apply text-text_color_01 text-base flex-1;
+    }
+  }
+}

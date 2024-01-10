@@ -1,0 +1,63 @@
+:local(.messenger-layout-wrapper) {
+  @apply flex flex-1 relative h-0 px-8 pt-36;
+
+  .layout-contetn-wrapper {
+    overflow: auto;
+    @apply flex flex-1;
+
+    box-shadow: 0 6px 12px 0 rgb(0 0 0/60%);
+  }
+
+
+  .messenger-bg {
+    @apply absolute w-full h-full top-0 left-0 z-0;
+
+    .brand-bar {
+      height: 222px;
+    }
+  }
+
+  .messenger-left {
+    @apply bg-bg_color z-1 h-full;
+
+    width: 480px;
+  }
+
+  .messenger-center {
+    @apply w-0 flex-1 bg-bg_color z-1 h-full;
+  }
+
+  .messenger-right {
+    @apply relative bg-bg_color overflow-x-hidden h-full;
+
+    width: 480px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /** 布局 header 高度 */
+  --layout-header-height: 60px;
+
+  @media (max-width: 1600px) {
+    @apply px-8;
+
+    .messenger-left {
+      width: 400px;
+    }
+
+    .messenger-right {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    @apply px-8;
+
+    .messenger-left {
+      width: 320px;
+    }
+
+    .messenger-right {
+      width: 320px;
+    }
+  }
+}

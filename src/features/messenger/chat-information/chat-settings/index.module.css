@@ -1,0 +1,40 @@
+:local(.setting-cell) {
+  @apply flex items-center cursor-pointer;
+
+  .setting-icon {
+    font-size: 16px;
+  }
+
+  .icon-wrap {
+    font-size: 20px;
+
+    @apply text-text_color_02;
+  }
+
+
+  /* blacklist icon is smaller than other icon */
+  /* stylelint-disable-next-line selector-class-pattern */
+  .icon-icon_chat_blacklist {
+    font-size: 24px;
+  }
+}
+
+:local(.common-contact-settings) {
+  span, .icon-wrap {
+    @apply text-secondary_color;
+  }
+
+  .setting-icon {
+    @apply hidden;
+  }
+}
+
+:local(.not-friend-contact-settings) {
+  span, .icon-wrap {
+    @apply text-brand_color;
+  }
+
+  .setting-icon {
+    @apply hidden;
+  }
+}

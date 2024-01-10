@@ -1,0 +1,27 @@
+:local(.message-center) {
+  @apply bg-bg_color_02 relative ;
+
+  height: 100vh;
+  box-shadow: 0 6px 12px 0 rgb(0 0 0 / 6%);
+
+  .top-bg {
+    @apply bg-brand_color;
+
+    width: 100vw;
+    height: 136px;
+  }
+
+  .message-info {
+    @apply flex absolute top-6 bottom-6 right-40 left-40 bg-bg_color;
+
+    .left-list {
+      width: 33%;
+    }
+  
+    .right-content {
+      @apply flex-1 bg-bg_color overflow-y-auto text-text_color_01 text-xl font-medium py-8 px-10;
+    }
+  }
+
+
+}

@@ -1,0 +1,168 @@
+/* stylelint-disable color-function-notation */
+/* stylelint-disable alpha-value-notation */
+:local(.message-wrapper) {
+  @apply flex rounded-lg mb-1.5;
+
+
+  &.is-self {
+    @apply justify-end;
+
+    .message-content {
+      @apply bg-brand_color_light_bg;
+    }
+  }
+
+  &.in-center {
+    @apply !justify-center mb-3;
+
+    .message-content {
+      @apply bg-transparent;
+
+      box-shadow: none;
+      filter: none;
+    }
+  }
+
+  .message-content {
+    @apply inline-flex w-auto rounded-lg bg-card_bg_color_03 relative;
+
+    box-shadow: 0 1px 1px rgb(0 0 0 / 20%);
+
+    .group-sender-nickname {
+      @apply flex pt-1.5 px-3 text-brand_color text-xs -mb-1;
+
+      /** 没有和箭头，而是红包一起 */
+      &.not-with-arrow {
+        @apply mb-0.5 pt-0 px-0;
+      }
+    }
+
+    &.messsage-custom-redpocket {
+      @apply bg-transparent;
+
+      box-shadow: none;
+    }
+  }
+}
+
+:local(.text-message-wrapper) {
+  @apply rounded-lg px-3 py-2;
+
+  .time {
+    /** 下边距可解决右侧内容差一点，浮动到下一行时没有边距的问题，不影响正常情况下的展示 */
+    @apply text-xs text-text_color_02 ml-2 mb-2 float-right translate-y-0.5;
+  }
+
+  img,
+  image {
+    user-select: all;
+  }
+}
+
+:local(.audio-message-wrapper) {
+  @apply rounded-lg px-3 py-2 flex items-center;
+
+  .time {
+    @apply text-xs text-text_color_02 ml-2 float-right translate-y-0.5;
+  }
+
+  .play-icon {
+    @apply px-1 py-1 flex items-center justify-center bg-brand_color rounded-full;
+  }
+}
+
+:local(.image-message-wrapper) {
+  @apply max-w-full overflow-hidden p-1 relative cursor-pointer;
+
+  .arco-image-img {
+    @apply rounded-lg;
+
+    width: var(--image-width);
+    height: var(--image-height);
+  }
+
+  .time {
+    @apply absolute bottom-1 left-1.5 right-1.5 pb-1.5 pt-3 px-1.5 text-xs text-button_text_01 text-right rounded-b-lg;
+
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.43) 100%);
+  }
+}
+
+:local(.video-message-wrapper) {
+  @apply max-w-full overflow-hidden p-1 relative;
+
+  video {
+    @apply rounded-lg;
+  }
+
+  .time {
+    @apply absolute bottom-1 left-1.5 right-1.5 pb-1.5 pt-3 px-1.5 text-xs text-button_text_01 text-right rounded-b-lg;
+
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.43) 100%);
+  }
+
+  .play-icon {
+    @apply px-2 py-2 flex items-center justify-center bg-brand_color absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full;
+  }
+
+  .duration {
+    @apply px-1 py-1 flex items-center  absolute left-2 top-2 bg-bg_color_03 text-button_text_01;
+
+    font-size: 10px;
+    border-radius: 20px;
+  }
+}
+
+:local(.chat-arrow) {
+  @apply absolute w-3;
+
+  &.is-left {
+    @apply left-0 -translate-x-full;
+
+    &:not(.is-group) {
+      @apply bottom-0.5;
+    }
+
+    &.is-group {
+      @apply top-0.5 left-px;
+    }
+  }
+
+  &.is-right {
+    @apply right-0 bottom-0.5 translate-x-full;
+  }
+}
+
+:local(.file-message-wrapper) {
+  @apply p-1;
+
+  .filename {
+    @apply text-base overflow-hidden whitespace-nowrap text-ellipsis max-w-full;
+  }
+
+  .file-size {
+    @apply text-text_color_02 text-xs;
+  }
+
+  .time {
+    @apply flex justify-end text-text_color_02 pr-2 mt-1;
+  }
+
+  .icon-wrapper {
+    @apply flex items-center p-3 bg-card_bg_color_01 cursor-pointer;
+  }
+}
+
+:local(.group-sender-avatar) {
+  @apply absolute top-0;
+
+  right: calc(100% + 16px)
+
+
+}
+
+:local(.multi-checkbox) {
+  @apply text-lg !absolute top-1/2 -translate-y-1/2;
+
+  right: calc(100% + 22px);
+}

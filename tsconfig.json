@@ -1,0 +1,24 @@
+{
+  "extends": "base-ts-config",
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": false,
+    "composite": false,
+    "skipLibCheck": false,
+    "noImplicitReturns": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["node", "vite/client"]
+  },
+  "include": ["./**/*", "./package.json", "./src/**/*"],
+  "exclude": [
+    "node_modules",
+    "assets",
+    "dist",
+    "**/ws/protobuf/",
+    "scripts/i18n-update/excel-to-json/utils",
+    "src-tauri"
+  ],
+  "extensions": [".ts", ".tsx", ".js", ".jsx"]
+}

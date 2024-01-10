@@ -1,0 +1,32 @@
+:local(.scoped) {
+  border-right: 1px solid #CDCDCF;
+  @apply w-full h-full bg-card_bg_color_01 border-line_color_02;
+
+  .pensonl-box {
+    max-height: calc(100% - 112px);
+    overflow: auto;
+  }
+
+
+  .personal {
+    @apply w-full flex justify-center items-center h-64;
+
+    .upload {
+      background: linear-gradient(180deg, #B4B6BE 0%, #999BA1 100%);
+      @apply relative flex justify-center items-center w-48 h-48 rounded-full;
+
+      .upload-icon-box {
+        @apply absolute w-10 h-10 bottom-0 right-0 bg-text_color_01 border-2 border-solid border-gray-200 rounded-full;
+      }
+    }
+  }
+
+  .buttonlong {
+    width: 90%;
+    font-size: 16px;
+    background-color: var(--card_bg_color_03)!important;
+    @apply flex justify-center items-center text-text_color_01 cursor-pointer mx-auto h-12 rounded-lg mb-5
+  }
+
+  
+}

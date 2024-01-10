@@ -1,0 +1,20 @@
+:local(.announcement-carousel) {
+  @apply text-brand_color flex justify-between  pt-6 pb-1 items-center;
+
+  .ellipsis-text {
+    overflow: hidden;
+    @apply whitespace-nowrap;
+
+    text-overflow: ellipsis;
+  }
+
+  .icon-chat-speaker {
+    @apply bg-brand_color w-4 h-4 flex items-center justify-center  mr-2 rounded-full;
+
+    color: #ffffff;
+  }
+
+  .arco-typography {
+    @apply mb-0;
+  }
+}

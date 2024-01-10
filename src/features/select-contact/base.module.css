@@ -1,0 +1,21 @@
+:local(.conversation-wrapper) {
+  @apply flex pl-4 cursor-pointer items-center;
+
+  .conversation-left {
+    @apply mr-4 relative;
+
+  }
+
+  .conversation-right {
+    @apply w-0 py-5 pr-4 flex-1 border-b border-solid border-line_color_02;
+
+    .conversation-name {
+      @apply text-base overflow-hidden text-ellipsis max-w-full whitespace-nowrap mr-4;
+    }
+  }
+
+  &:hover {
+    @apply bg-box_bg_color;
+  }
+
+}

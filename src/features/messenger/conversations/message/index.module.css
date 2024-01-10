@@ -1,0 +1,9 @@
+:local(.message-wrapper) {
+  @apply text-text_color_02 overflow-hidden text-ellipsis max-w-full whitespace-nowrap break-all flex;
+
+  > *:not(.not-text-ellipsis),
+  .message-text {
+    @apply text-text_color_02 overflow-hidden text-ellipsis max-w-full whitespace-nowrap break-all;
+  }
+  
+}

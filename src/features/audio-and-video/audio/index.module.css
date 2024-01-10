@@ -1,0 +1,62 @@
+:local(.audio) {
+  #remote-video {
+    @apply w-0 h-0 overflow-hidden !important;
+
+    video {
+      @apply w-0 h-0 overflow-hidden !important;
+    }
+  }
+
+  .arco-modal-wrapper-no-mask {
+    @apply flex justify-center items-center !important;
+  }
+}
+
+
+
+:local(.resize-drag-audio) {
+  width: 360px;
+  height: 640px;
+
+  /* margin-top: -320px; 
+  margin-left: -180px; 
+  top-1/2 left-1/2  */
+  @apply touch-none text-xl rounded-lg p-0 box-border cursor-auto bg-call_bg_color_01 !important;
+  
+  .arco-modal-content {
+    @apply p-0 static !important;
+  }
+}
+
+:local(.resize-drag-audio-container) {
+  .avatar {
+    margin-top: 144px;
+
+    img {
+      width: 96px;
+      height: 96px;
+      @apply rounded-full !important;;
+    }
+  }
+  
+  .drag-audio-text {
+    @apply text-button_text_01 flex justify-center;
+  }
+  
+  /* .drag-audio-handle-container {
+    width: 56px;
+
+    .drag-audio-handle {
+      width: 56px;
+      height: 56px;
+      @apply flex justify-center items-center rounded-full;
+    }
+    
+    .drag-audio-handle-text {
+      @apply flex justify-center items-center text-xs text-button_text_01 mt-2;
+    }
+  } */
+  
+
+
+}

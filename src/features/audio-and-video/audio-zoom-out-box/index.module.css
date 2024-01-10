@@ -1,0 +1,23 @@
+:local(.audio-zoom-out-box) {
+  top: 51px !important;
+  right: 36px;
+  width: 72px;
+  height: 72px !important;
+  border-radius: 10px;
+  box-shadow: 0 -6px 10px 0 rgb(0 0 0 / 4%), 0 6px 10px 0 rgb(0 0 0 / 4%), -6px 0 10px 0 rgb(0 0 0 / 4%), 6px 0 10px 0 rgb(0 0 0 / 4%);
+  @apply absolute touch-none  text-xl p-0 box-border cursor-auto bg-card_bg_color_03 !important;
+  
+  .arco-modal-content {
+    height: 72px;
+    @apply p-0 static w-full !important;
+  }
+}
+
+:local(.audio-zoom-out-box-container) {
+  @apply flex justify-center items-center w-full h-full;
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}

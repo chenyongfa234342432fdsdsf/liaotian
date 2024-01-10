@@ -1,0 +1,22 @@
+:local(.chat-header-wrapper) {
+  @apply flex items-center px-4 bg-box_bg_color border-b border-solid border-line_color_02;
+
+  height: var(--layout-header-height);
+
+  .name {
+    @apply text-base ml-4 flex-1 w-0 overflow-hidden overflow-ellipsis whitespace-nowrap;
+
+  }
+  
+  .not-allowed {
+    svg {
+      @apply cursor-not-allowed !important;
+    }
+  }
+}
+
+:local(.header-more-dropdown-wrapper) {
+  .arco-dropdown-menu {
+    max-height: 400px;
+  }
+}

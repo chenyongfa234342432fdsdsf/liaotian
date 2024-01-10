@@ -1,0 +1,43 @@
+:local(.system-item) {
+  @apply flex flex-col justify-center items-center mb-8;
+
+  box-shadow: 0 1px 1px rgb(0 0 0 / 20%);
+
+
+
+  .date {
+    @apply text-text_color_01 bg-card_bg_color_02 rounded-lg px-9 mb-3;
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .content-box {
+    @apply bg-card_bg_color_03 cursor-pointer w-full;
+
+    padding: 16px 45px 16px 16px; border-radius: 8px;
+
+
+    .title {
+      @apply ml-3 text-text_color_01 text-sm font-medium;
+    }
+    
+    .article {
+      @apply text-text_color_02 text-sm font-normal;
+    
+      margin-top: 13px;
+    }
+  }
+
+  .icon-chat-box {
+    @apply w-6 h-6 bg-brand_color rounded-full flex justify-center items-center;
+
+    svg {
+      @apply w-3;
+
+      height: 10px;
+      color: #ffffff;
+    }
+  }
+
+}

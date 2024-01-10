@@ -1,0 +1,1 @@
+import{r as a}from"./chunk-e9cd8943.js";const h=()=>{const[e,n]=a.useState(window.location.hash),s=a.useCallback(()=>{n(window.location.hash)},[]);a.useEffect(()=>(window.addEventListener("hashchange",s),()=>{window.removeEventListener("hashchange",s)}),[]);const o=a.useCallback(t=>{t!==e&&(window.location.hash=t)},[e]);return{hash:e,updateHash:o}},r=h;export{r as u};

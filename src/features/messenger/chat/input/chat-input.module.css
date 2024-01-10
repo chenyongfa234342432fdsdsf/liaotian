@@ -1,0 +1,15 @@
+:local(.chat-input-wrapper),
+:local(.input-actions-more) {
+  @apply px-6 py-2.5 flex items-center justify-between bg-box_bg_color border-t  border-line_color_02;
+
+  min-height: 64px;
+
+}
+
+:local(.chat-input-wrapper) {
+  @apply relative;
+}
+
+:local(.input-actions-more) {
+  @apply absolute top-0 left-0 w-full border-none;
+}

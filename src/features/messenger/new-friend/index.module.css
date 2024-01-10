@@ -1,0 +1,46 @@
+:local(.new-friend) {
+  height: 100%;
+  border-color: var(--line_color_02);
+  border-style: solid;
+  border-right-width: 1px;
+  box-shadow: 0 6px 12px 0 rgb(0 0 0 / 60%);
+
+  .search-input {
+    @apply flex justify-center items-center mt-4 mb-6 px-4;
+
+    .search-input-comm {
+      @apply bg-box_bg_color;
+
+      border-radius: 8px;
+
+      .arco-input-inner-wrapper {
+        border: 0
+      }
+    }
+
+    input {
+      @apply bg-box_bg_color w-full;
+
+      height: 36px;
+    }
+  }
+
+
+  .scroll-show {
+    max-height: calc(100% - 210px);
+    overflow: auto;
+
+  }
+
+  .new-friends-list {
+    @apply pl-4;
+
+    .new-friends-lis-title {
+      @apply text-text_color_02 text-[14px] leading-normal mb-3;
+    }
+  }
+
+  .near {
+    @apply mb-6;
+  }
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "com.newbit.im.chat.proto";
+option java_outer_classname = "RedPackageStatusPushProto";
+
+message RedPackageStatusPush{
+  //红包ID
+  string packageId = 1;
+  //红包状态
+  sint64 packageStatus =2;
+}

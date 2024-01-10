@@ -1,0 +1,61 @@
+:local(.lang-select) {
+  .lang-item {
+    @apply text-base flex items-center pb-6 cursor-pointer text-center;
+
+    label {
+      @apply cursor-pointer;  
+    }
+  }
+
+  .lang-text {
+    @apply pl-4 ;
+  }
+
+  .footer {
+    @apply flex items-center justify-end gap-4;
+
+    button {
+      height: 38px;
+      border-radius: 45px;
+    }
+  }
+}
+
+:local(.select) {
+  background: red;
+
+  .arco-modal-title {
+    svg {
+      display: none;
+    }
+  }
+}
+
+
+:local(.lang-drop-down) {
+  @apply absolute top-10 right-10;
+
+ 
+  .drop-down {
+    .arco-select-view {
+      background-color: var(--card-bg-color-01)!important;
+      border: none;
+      @apply flex items-center;
+
+      .arco-select-arrow-icon {
+        @apply text-base text-icon_color
+}
+
+      .arco-select-view-value {
+        font-weight: 500;
+        @apply text-base text-text_color_01
+      }
+    }
+  }
+}
+
+.arco-select-popup {
+  border: none;
+}
+
+

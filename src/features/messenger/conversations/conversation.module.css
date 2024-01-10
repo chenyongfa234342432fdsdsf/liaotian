@@ -1,0 +1,37 @@
+:local(.conversation-wrapper) {
+  @apply flex pl-4 cursor-pointer;
+
+  .conversation-left {
+    @apply mr-4 py-3 relative;
+
+    .unread {
+      @apply absolute px-0.5 flex justify-center font-medium right-0 top-0 rounded-full bg-secondary_color text-button_text_01;
+
+      min-width: 16px;
+      font-size: 10px;
+      line-height: 16px;
+
+
+    }
+  }
+
+  .conversation-right {
+    @apply w-0 py-3 pr-4 flex-1 border-b border-solid border-line_color_02;
+
+    .conversation-name {
+      @apply text-base overflow-hidden text-ellipsis max-w-full whitespace-nowrap mr-4;
+    }
+  }
+
+  &.is-mute {
+    .unread {
+      @apply bg-icon_color !important;
+    }
+  }
+
+  &.is-selected,
+  &:hover {
+    @apply bg-box_bg_color;
+  }
+
+}

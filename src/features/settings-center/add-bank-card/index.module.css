@@ -1,0 +1,24 @@
+:local(.scoped) {
+  @apply h-full bg-card_bg_color_01 flex flex-col;
+  
+  .submit-icon {
+    color: #ffffff;
+  }
+
+  .arco-form-item {
+    @apply border-b border-line_color_02 last:border-b-0 mb-0 items-center;
+  }
+
+  .arco-form-label-item > label {
+    @apply text-base font-medium whitespace-nowrap;
+  }
+
+  .arco-input {
+    padding-left: 34px;
+    @apply border-none py-6;
+
+    &::placeholder {
+      @apply text-text_color_04 text-base;
+    }
+  }
+}

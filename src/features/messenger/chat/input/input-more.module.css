@@ -1,0 +1,30 @@
+:local(.input-more-wrapper) {
+  @apply flex justify-center items-center rounded-full;
+
+  transition: all 0.3s ease-in-out;
+
+  &.is-opened {
+    @apply rotate-45 bg-button_animate;
+  }
+}
+
+:local(.input-more-menus-wrapper) {
+  @apply rounded-lg bg-card_bg_color_03;
+
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 15%);
+
+  .more-menu-item {
+    @apply flex items-center text-text_color_01;
+
+    svg {
+      @apply !mr-0;
+    }
+  }
+
+  .red-packet-icon {
+    svg {
+      @apply text-avatar_bg_03 !important;
+    }
+    
+  }
+}

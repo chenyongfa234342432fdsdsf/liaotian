@@ -1,0 +1,21 @@
+:local(.members-manage) {
+  header {
+    @apply text-button_text_01 bg-brand_color_animate text-base flex items-end pl-6 pb-[18px];
+
+    height: var(--layout-header-height);
+
+    svg {
+      @apply text-[24px] mr-6;
+
+      color: #ffffff;
+    }
+  }
+
+  .people-people-box {
+    @apply flex items-center ml-4 w-full;
+
+    .people-people {
+      @apply text-text_color_01 text-sm my-4;
+    }
+  }
+}

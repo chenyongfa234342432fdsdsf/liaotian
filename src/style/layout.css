@@ -1,0 +1,61 @@
+/* This CSS is common to all pages */
+@import './arcoplate.css';
+@import './preflight.css';
+@import './tailwind.css';
+@import './theme.css';
+@import './global.css';
+@import './arco.css';
+
+
+.layout-wrap {
+  @apply min-h-screen flex flex-col relative ;
+
+  height: 100vh;
+
+
+  .arco-layout-content {
+    @apply flex flex-col w-full;
+
+    /* width: 1200px; */
+
+    /* margin: 0 auto; */
+  }
+
+  .layout-header {
+    height: 136px;
+    @apply bg-brand_color -z-80 absolute top-0 w-full;
+  }
+
+  .layout-messenger {
+    width: 100%;
+    padding-right: 160px;
+    padding-left: 160px;
+    @apply my-6 flex h-full;
+
+    .messenger-left {
+      width: 480px;
+    }
+
+    .messenger-main {
+      @apply flex-1;
+    }
+
+    .messenger-right {
+      width: 480px;
+    }
+  }
+}
+
+.layout-fullscreen-wrap {
+  @apply min-h-screen flex flex-col;
+
+  margin: 0;
+
+  .arco-layout-content {
+    @apply flex flex-col;
+  }
+
+  .arco-layout-content > div {
+    @apply flex-1;
+  }
+}

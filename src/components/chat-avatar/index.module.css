@@ -1,0 +1,13 @@
+:local(.chat-avatar-wrapper) {
+  @apply rounded-full flex items-center justify-center;
+
+  background-image: linear-gradient(180deg, #B4B6BE 0%, #999BA1 100%);
+
+  .arco-image-overlay {
+    @apply flex justify-center items-center flex-1;
+  }
+
+  .arco-image-img {
+    @apply rounded-full;
+  }
+}

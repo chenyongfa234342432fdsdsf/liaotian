@@ -1,0 +1,17 @@
+:local(.modal) {
+  &.arco-modal-simple {
+    @apply p-0 bg-transparent;
+
+    width: 260px;
+    box-shadow: none;
+  }
+
+  .content {
+    @apply flex flex-col bg-transparent;
+  }
+
+  .close-btn {
+    @apply w-8 h-8 mt-10 rounded-full  self-center 
+      flex items-center justify-center cursor-pointer;
+  }
+}

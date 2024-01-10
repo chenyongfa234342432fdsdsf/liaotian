@@ -1,0 +1,30 @@
+:local(.list-item) {
+  @apply pl-6 pt-3;
+
+
+  &.active {
+    @apply bg-box_bg_color;
+  }
+
+  .item-info {
+    @apply border-b border-line_color_02 ;
+
+    padding-bottom: 14px;
+
+
+    .item-title {
+      @apply text-base text-text_color_01 flex;
+
+      img {
+        @apply w-6 h-6 mr-4;
+      }
+    
+    
+    }
+    
+    .item-time {
+      @apply text-sm text-text_color_02 mt-1;
+    }
+  }
+
+}

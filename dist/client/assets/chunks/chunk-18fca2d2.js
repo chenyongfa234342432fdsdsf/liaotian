@@ -1,0 +1,1 @@
+import{r as e,R as a}from"./chunk-e9cd8943.js";import{j as n}from"./chunk-c1d16543.js";function f({children:s,hasLoading:r=!1}){const[t,l]=e.useState(!1);return e.useEffect(()=>{l(!0)},[]),t?n(a.Suspense,{fallback:null,children:s}):null}export{f as A};

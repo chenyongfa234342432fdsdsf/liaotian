@@ -1,0 +1,28 @@
+:local(.chat-complain-model) {
+  .arco-btn {
+    flex: 0 !important;
+    @apply rounded-full;
+  }
+    
+  .arco-modal-footer {
+    @apply justify-end border-none;
+  }
+
+  .arco-modal-content {
+    @apply py-0;
+  }
+
+  textarea {
+    height: 140px;
+    @apply mt-2 bg-card_bg_color_01;
+  }
+  
+  .arco-upload-trigger-picture {
+    @apply bg-card_bg_color_03;
+  }
+
+  .arco-modal-title {
+    @apply text-left;
+  }
+
+}

@@ -1,0 +1,60 @@
+:local(.announcement-article) {
+  .article-content {
+    .article-html {
+      @apply mb-8 box-border overflow-hidden break-words text-text_color_01 text-sm font-normal;
+
+      line-height: 26px;
+
+      p, li, span {
+        @apply text-sm font-normal text-text_color_01;
+
+        line-height: 26px;
+      }
+  
+      a {
+        @apply text-sm font-normal text-brand_color;
+
+        line-height: 26px;
+      }
+  
+      ul {
+        text-indent: 24px;
+      }
+  
+      img {
+        @apply my-4;
+      }
+  
+      table {
+        border-right: 1px solid var(--line_color_02);
+        border-bottom: 1px solid var(--line_color_02);
+  
+        td {
+          border-top: 1px solid var(--line_color_02);
+          border-left: 1px solid var(--line_color_02);
+        } 
+      }
+        
+      video {
+        @apply w-full;
+      }
+    }
+
+  
+
+    .header {
+      h3 {
+        @apply text-text_color_01 font-medium text-xl;
+      }
+
+      .date-time {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        color: var(--text_color_03);
+        font-size: .75rem;
+        line-height: 22px;
+      }
+    }
+  }
+
+}

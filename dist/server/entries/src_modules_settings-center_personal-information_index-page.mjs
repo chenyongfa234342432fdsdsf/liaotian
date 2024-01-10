@@ -1,0 +1,1 @@
+import{A as o}from"../chunks/chunk-138b66ed.js";import{lazy as t}from"react";import{j as r}from"../chunks/chunk-ea028b12.js";import"../chunks/chunk-20abda34.js";import"@nbit/utils";const m=t(()=>import("../chunks/chunk-9d7ea37f.js"));function a(){return r(o,{children:r(m,{})})}export{a as Page};

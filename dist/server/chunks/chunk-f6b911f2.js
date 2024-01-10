@@ -1,0 +1,1 @@
+import{j as s,a}from"./chunk-ea028b12.js";const c="display-list-index-module__scoped--k0s",d={scoped:c};function n({children:e,label:l,style:i}){return s("div",{className:d.scoped,style:i,children:a("div",{className:"listbox",children:[s("span",{className:"list-label",children:l}),s("div",{className:"flex-1 h-full items-center flex justify-end",children:e})]})})}export{n as D};

@@ -1,0 +1,8 @@
+:local(.scoped) {
+  @apply w-[292px]  md:w-[444px] h-auto bg-[#1D1D23] !important;
+  
+  img {
+    @apply w-[80px] h-[80px] md:w-[112px] md:h-[112px];
+  }
+
+}

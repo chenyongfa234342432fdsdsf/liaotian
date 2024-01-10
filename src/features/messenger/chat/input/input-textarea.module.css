@@ -1,0 +1,99 @@
+/* stylelint-disable selector-class-pattern */
+
+:local(.input-textarea-wrapper) {
+  @apply bg-card_bg_color_03 px-4 py-2.5 flex items-center flex-1 mx-4 border border-solid border-transparent w-0 relative;
+
+  border-radius: 10px;
+
+  input {
+    @apply border-none  outline-none;
+  }
+
+  &.is-focused {
+    @apply border-brand_color;
+  }
+
+  .mention-input {
+    @apply flex-1 w-full;
+
+    .mention-input__highlighter {
+      @apply border-0  !important;
+    }
+
+    
+
+    input,
+    .mention-input__highlighter {
+      /* 存在颜色不同时字体粗细不同的 bug，这里单独处理一下字体 */
+      font-family: -apple-system, 'PingFang SC', 'Microsoft Yahei', 'Heiti SC', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    }
+  }
+
+  .quill {
+    @apply min-h-[22px] max-h-[160px] w-full overflow-y-auto whitespace-pre-wrap;
+
+    word-wrap: break-word;
+
+
+    &::-webkit-scrollbar {
+      /* display: block; */
+      @apply bg-card_bg_color_01;
+
+      width: 2px;
+      height: 2px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 29px;
+    }
+
+    .ql-clipboard {
+      @apply absolute h-px top-1/2 overflow-y-hidden left-[-10000px];
+    }
+    
+    .ql-container {
+      @apply border-none;
+    }
+
+    .ql-editor {
+      @apply relative;
+
+      &.ql-blank::before {
+        @apply text-text_color_04 absolute pointer-events-none left-0 right-4;
+
+        content: attr(data-placeholder);
+      }
+
+      .emoji-blot {
+      
+      }
+    }
+
+    .mention {
+      @apply text-brand_color;
+    }
+  }
+
+  .ql-mention-list-container {
+    @apply absolute bg-card_bg_color_03 border-solid border border-line_color_02 rounded-lg p-3 !important;
+
+    top: unset !important;
+    bottom: 48px;
+    left: 0 !important;
+    width: 100%;
+
+    
+  }
+
+  .mention-item {
+    @apply px-3 py-1 rounded-lg flex items-center cursor-pointer;
+
+    &:hover {
+      @apply bg-box_bg_color;
+    }
+  }
+}
+
+:local(.mentions__mention) {
+  @apply text-brand_color z-1 pointer-events-none relative;
+}

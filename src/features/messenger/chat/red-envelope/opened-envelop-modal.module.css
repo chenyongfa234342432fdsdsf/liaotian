@@ -1,0 +1,25 @@
+:local(.opened) {
+  &.arco-modal-simple {
+    @apply p-0;
+
+    width: 500px;
+    max-height: 90vh;
+    overflow: auto;
+    background-repeat: none;
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 15%);
+
+  }
+
+  .content {
+    @apply relative;
+
+    min-height: 230px;
+    padding-top: 80px;
+    background-repeat: no-repeat;
+    background-position-y: -23px;
+  }
+
+  .icon {
+    @apply text-button_text_01 absolute right-6 top-6;
+  }
+}

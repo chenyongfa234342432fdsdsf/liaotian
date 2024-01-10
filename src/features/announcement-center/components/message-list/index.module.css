@@ -1,0 +1,29 @@
+:local(.message-list) {
+  @apply flex flex-col h-full;
+
+  .head {
+    @apply bg-brand_color_animate flex items-end pl-6;
+
+    height: 112px;
+    padding-bottom: 19px;
+
+    .title {
+      @apply flex items-center text-xl font-medium text-button_text_01;
+
+      svg {
+        @apply w-6 h-6 mr-6;
+      }
+    }
+  }
+  
+  .is-select {
+    @apply bg-box_bg_color;
+  }
+
+  .message-data {
+    &:hover {
+      @apply bg-box_bg_color cursor-pointer;
+
+    }
+  }
+}

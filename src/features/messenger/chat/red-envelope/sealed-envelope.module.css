@@ -1,0 +1,21 @@
+:local(.sealed) {
+  @apply relative box-border flex flex-col items-center;
+
+  height: 400px;
+  padding-top: 84px;
+
+  .sender {
+    @apply text-center;
+
+    color: #FFDFAC;
+    font-size: 14px;
+  }
+
+  .bless {
+    @apply text-center text-ellipsis overflow-hidden whitespace-nowrap ;
+
+    max-width: 90%;
+    color: #FFDFAC;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,4 @@
+:local(.messenger-wrapper) {
+  @apply bg-bg_color h-full border-r border-line_color_02 border-solid flex flex-col;
+
+}

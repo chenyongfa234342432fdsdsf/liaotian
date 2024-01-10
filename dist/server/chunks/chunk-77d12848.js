@@ -1,0 +1,1 @@
+var r=(a=>(a.light="light",a.dark="dark",a.system="system",a))(r||{}),k=(a=>(a.light="light",a.dark="dark",a))(k||{}),s=(a=>(a.binance="binance",a.okx="okx",a.kucoin="kucoin",a.default="",a))(s||{});export{s as C,k as T,r as a};

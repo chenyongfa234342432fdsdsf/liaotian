@@ -1,0 +1,46 @@
+:local(.scoped) {
+  border-right: 1px solid #CDCDCF;
+  @apply bg-card_bg_color_01 h-full w-full border-line_color_02;
+  
+  .content {
+    max-height: calc(100% - 112px);
+    overflow: auto;
+    @apply pt-8 flex flex-col items-center justify-start;
+
+    .logout-icon {
+      @apply text-brand_color mb-4
+    }
+
+    h3 {
+      @apply text-lg text-text_color_01
+    }
+
+    .tipcontent {
+      @apply bg-card_bg_color_03 p-6 pt-4 flex flex-col mt-8;
+
+      .num {
+        @apply w-6 h-6 border border-y-gray-600 text-brand_color rounded-full flex justify-center items-center border-solid mr-3 flex-shrink-0; 
+
+        border-color: var(--brand-color);
+      }
+    }
+
+    .commit-btn {
+      @apply w-12 h-12 bg-brand_color rounded-full flex justify-center items-center m-auto mt-8 mb-5 flex-shrink-0;
+  
+      .commit-icon {
+        @apply text-2xl text-card_bg_color_03
+      }
+    }  
+  }
+
+  .country-icon {
+    @apply mr-2 text-sm
+}
+
+  .country-icon-active {
+    @apply text-brand_color mr-2 text-sm
+}
+  
+}
+

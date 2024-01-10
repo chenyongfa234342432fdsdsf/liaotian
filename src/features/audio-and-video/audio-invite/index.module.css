@@ -1,0 +1,25 @@
+:local(.audio) {
+
+}
+
+
+
+:local(.resize-drag-audio-invite) {
+  top: 100px !important;
+  width: 300px;
+  height: 106px !important;
+  @apply absolute touch-none right-0 text-xl rounded-lg p-0 box-border cursor-auto bg-call_bg_color_01 !important;
+  
+  .arco-modal-content {
+    @apply p-0 static !important;
+  }
+}
+
+:local(.resize-drag-audio-invite-container) {
+  .avatar {
+    img {
+      @apply w-9 h-9;
+    }
+  }
+}
+

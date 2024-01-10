@@ -1,0 +1,40 @@
+:local(.scoped) {
+  border-right: 1px solid #CDCDCF;
+  @apply bg-card_bg_color_01 h-full w-full border-line_color_02;
+  
+  .password-box {
+    @apply bg-card_bg_color_03 pl-6 pr-6;
+
+    div {
+      &:last-child {
+        .password-input {
+          border: none;
+        }  
+       
+      }
+    }
+    
+   
+  }
+
+  .forget-password {
+    height: 72px;
+    @apply w-full bg-card_bg_color_03 pl-6 pr-6 flex items-center justify-start mt-3;
+
+    p {
+      @apply text-secondary_color text-base;
+    }
+  }
+
+  .commit-btn {
+    @apply w-12 h-12 bg-brand_color rounded-full flex justify-center items-center m-auto mt-8;
+
+    .commit-icon {
+      @apply text-2xl text-card_bg_color_03
+    }
+  }
+
+  
+}
+
+

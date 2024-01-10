@@ -1,0 +1,7 @@
+:local(.radio) {
+  @apply flex items-center;
+
+  &.arco-radio {
+    @apply mr-0 pl-0;
+  }
+}

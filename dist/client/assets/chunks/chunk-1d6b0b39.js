@@ -1,0 +1,1 @@
+import{r as o}from"./chunk-e9cd8943.js";var e=function(t){return typeof t=="function"},s=function(t){return typeof t=="number"},n=!1;const r=n;var u=function(t){r&&(e(t)||console.error('useMount: parameter `fn` expected to be a function, but got "'.concat(typeof t,'".'))),o.useEffect(function(){t==null||t()},[])};const c=u;export{e as a,s as b,r as i,c as u};

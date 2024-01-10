@@ -1,0 +1,32 @@
+:local(.scoped) {
+  border-right: 1px solid #CDCDCF;
+  @apply bg-card_bg_color_01 h-full w-full border-line_color_02;
+  
+  .content {
+    max-height: calc(100% - 112px);
+    overflow: auto;
+    @apply pt-8 flex flex-col items-center justify-start;
+
+    image {
+      @apply w-20 h-20 rounded-md
+    }
+
+    h3 {
+      @apply text-lg text-text_color_01
+    }
+
+    .version {
+      @apply text-text_color_02 text-xs
+    }
+
+    .tipcontent {
+      @apply bg-card_bg_color_03 p-6 pt-4 flex flex-col mt-8 text-text_color_01;
+     
+    
+    }
+
+ 
+  }
+}
+
+

@@ -1,0 +1,50 @@
+:local(.scoped) {
+  padding: 12px 24px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 6%);
+  @apply w-full bg-card_bg_color_03 h-auto flex flex-col justify-between h-20;
+
+  .input-label {
+    font-size: 14px;
+    @apply text-brand_color;
+  }
+
+  .input-box {
+    font-size: 16px;
+    @apply flex justify-between text-text_color_01 font-medium;
+
+    .tipvalue {
+      @apply text-text_color_04;
+    }
+
+    .icon-box {
+      @apply w-6 h-6 bg-card_bg_color_03 cursor-pointer;
+
+      .modify-icon {
+        color: #9B9CA2
+      }
+    }
+  }
+
+  .enter-box {
+    border-bottom: 2px solid #CDCDCF;
+    @apply flex justify-start w-full border-line_color_02;
+   
+    .enter-input {
+      caret-color: #7062CA;
+      @apply flex-1 bg-card_bg_color_03;
+    }
+
+    .max-num {
+      font-size: 14px;
+      @apply text-text_color_04
+    }
+
+    .icon-box {
+      @apply w-6 h-6 bg-card_bg_color_03 cursor-pointer;
+  
+      .modify-icon {
+        color: #9B9CA2
+      }
+    }
+  }
+}

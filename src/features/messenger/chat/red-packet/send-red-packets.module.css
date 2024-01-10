@@ -1,0 +1,109 @@
+:local(.peer-red-packet) {
+  .money-input {
+    input {
+      text-align: right;
+    }
+
+    margin-bottom: 20px;
+  }
+
+  .input-str {
+    @apply text-text_color_01;
+
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+
+}
+
+:local(.group-red-packet) {
+  .red-type {
+    @apply grid grid-cols-2 text-text_color_02 bg-card_bg_color_01;
+
+    gap: 2px;
+    height: 36px;
+    margin-bottom: 20px;
+    padding: 2px;
+    font-size: 16px;
+    border-radius: 4px;
+
+    & div {
+      @apply flex items-center justify-center w-full;
+    }
+
+    .is-select {
+      @apply h-full text-text_color_01 bg-card_bg_color_03;
+
+      border-radius: 4px;
+    }
+  }
+
+  .input-str {
+    @apply flex items-center font-normal text-text_color_01 pl-2;
+
+    font-size: 16px;
+  }
+
+  .total-count {
+    @apply text-text_color_03 ;
+
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 18px;
+
+  }
+
+  .text-input {
+    margin-top: 10px;
+  }
+
+  .rtl {
+    input {
+      text-align: right;
+    }
+
+  }
+
+  .red-packet-icon {
+    svg {
+      @apply text-avatar_bg_03;
+    }
+  }
+
+  .group-normal-icon {
+    svg {
+      @apply text-text_color_special_01;
+    }
+  }
+}
+
+:local(.red-packet-input) {
+  .arco-input-number {
+    .arco-input-inner-wrapper {
+      @apply !outline-none !border-none
+    }
+
+    .arco-input-group {
+      @apply bg-box_bg_color;
+
+      border-radius: 10px;
+    }
+  }
+
+}
+
+:local(.input) {
+  &.arco-input {
+    @apply !bg-box_bg_color !outline-none !border-none;
+
+    border-radius: 10px;
+
+    &:focus {
+      @apply !bg-box_bg_color;
+    }
+  }
+}
+
+
+

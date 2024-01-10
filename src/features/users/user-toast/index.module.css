@@ -1,0 +1,7 @@
+:local(.container) { 
+  @apply bg-[#292930] text-white text-sm border-none;
+  
+  .arco-message-content {
+    @apply text-white;
+  }
+}

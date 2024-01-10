@@ -1,0 +1,36 @@
+:local(.scoped) {
+  @apply flex flex-col h-full bg-card_bg_color_01;
+
+
+  .fill-all-btn {
+    height: unset;
+    @apply font-medium;
+  }
+
+  .arco-input-inner-wrapper {
+    @apply border-t-0 border-l-0 border-r-0 border-b-2 rounded-none px-0;
+
+    .arco-input {
+      font-size: 32px;
+      line-height: 24px;
+
+      @apply py-2; 
+    }
+  }
+
+  .submit-icon {
+    color: #ffffff;
+  }
+}
+
+:local(.modal) {
+  width: 500px;
+  
+  .arco-radio-group {
+    @apply block;
+  }
+
+  .arco-radio {
+    @apply mr-4;
+  }
+}

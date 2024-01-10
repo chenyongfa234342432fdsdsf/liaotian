@@ -1,0 +1,13 @@
+:local(.list) {
+  @apply py-4 px-6;
+
+  border-top: 1px solid var(--line_color_02);
+
+  .file-message .icon-wrapper {
+    max-width: 250px ;
+  }
+
+  .text-message {
+    @apply flex items-center;
+  }
+}

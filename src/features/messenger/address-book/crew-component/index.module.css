@@ -1,0 +1,64 @@
+:local(.crew) {
+  .nav-item {
+    @apply flex justify-between cursor-pointer;
+
+    .nav-item-left {
+      @apply flex ;
+
+      max-width: calc(100% - 90px);
+
+      /* .nav-ico-box {
+        @apply w-12 h-12 flex justify-center items-center overflow-hidden cursor-pointer;
+
+        background: linear-gradient(180deg, #B4B6BE 0%, #999BA1 100%);
+        border-radius: 50%;
+
+        .icon-color {
+          color: #FFFFFF;
+        }
+      } */
+
+      .nav-text {
+        @apply flex-1 text-text_color_01 text-base leading-[48px] ml-3;
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        .highlighted {
+          @apply text-brand_color bg-transparent;
+        }
+      }
+    }
+
+    .nav-item-right {
+      @apply mr-4 flex justify-center items-center;
+
+      .add-btn {
+        @apply bg-bg_sr_color text-text_color_01 text-[14px] text-center leading-[28px] cursor-pointer;
+
+        width: 60px;
+        height: 28px;
+        border-radius: 24px;
+      }
+
+      .add-text {
+        @apply text-text_color_02 text-[14px];
+
+        .added {
+          @apply mr-1 relative text-icon_color ;
+
+          top: -2px
+        }
+      }
+    }
+  }
+
+  .line {
+    @apply bg-line_color_02 my-3 ml-[60px];
+
+    width: calc(100% - 60px);
+    height: 1px;
+  }
+   
+}
